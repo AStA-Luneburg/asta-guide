@@ -8,12 +8,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'AStA Guide',
   tagline: 'Website-Guide für asta-lueneburg.de',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://guide.asta-lueneburg.de',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'asta-lueneburg', // Usually your GitHub org/user name.
+  organizationName: 'asta-luneburg', // Usually your GitHub org/user name.
   projectName: 'asta-guide', // Usually your repo name.
 
   presets: [
@@ -24,13 +24,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/asta-lueneburg/asta-guide/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/asta-luneburg/asta-guide/tree/main/packages/create-docusaurus/templates/shared/',
         },
         // blog: {
         //   showReadingTime: true,
         //   // Please change this to your repo.
         //   editUrl:
-        //     'https://github.com/asta-lueneburg/asta-guide/tree/main/packages/create-docusaurus/templates/shared/',
+        //     'https://github.com/asta-luneburg/asta-guide/tree/main/packages/create-docusaurus/templates/shared/',
         // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -92,7 +92,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/asta-lueneburg/asta-guide',
+                href: 'https://github.com/asta-luneburg/asta-guide',
               },
             ],
           },
