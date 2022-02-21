@@ -1,0 +1,91 @@
+# Kalender
+
+Die AStA Website verfügt über einen umfangreichen Kalender, in den alle angehalten sind, ihre Termine (Referatstreffen, Events, Sitzungen, etc...) einzutragen.
+
+
+![](/img/guide-pics/image36.png)
+
+Um dies zu tun, klickt im Administrationsbereich in der Leiste links auf „Termine“ unter „STEC“. Es erscheint eine Liste mit allen Kalendern. Sucht den Kalender, zu dem ihr einen Termin hinzufügen möchtet und klickt auf dessen Titel.
+
+:::info
+Aktuell gibt es für jedes Referat einen einzelnen Kalender, während sich die Servicebetriebe einen Kalender teilen.
+:::
+
+Ihr kommt auf eine Seite, auf der euch alle bereits erstellten Termine für diesen Kalender angezeigt werden. Diese könnt ihr bearbeiten, indem ihr auf den Titel des Termines klickt oder auf den Button „Bearbeiten“, wenn ihr mit der Maus über einen Termin fahrt. Dort könnt ihr einen Termin auch löschen. Möchtet ihr mehrere Termine, wählt diese aus, indem ihr die Box neben dem Termin mit einem Klick anhakt und klickt anschließend auf „Ausgewählte Termine löschen“.
+
+## Termin Optionen
+
+Um einen neuen Termin zu erstellen, klickt oben in der Terminübersicht auf „Termin hinzufügen“. Hier gibt es jede Menge Einstellungsmöglichkeiten. Die wichtigsten werden im folgenden einmal erklärt. Die Optionen, die nicht erwähnt sind, könnt ihr ignorieren.
+
+:::info Achtung
+Die Funktionen, die hier nicht beschrieben wurden, solltet ihr auf ihren Standardwerten belassen und ignorieren.
+:::
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="allgemein" label="Allgemein" default>
+
+Gewünschter Namen des Termins: Selbsterklärend. Gebt eurem Termin einen Namen.
+
+Titel-Schnecke: Die „Schnecke“ (engl. „Slug“) ist ein einzigartiger Name für euren Termin, bestehend aus Kleinbuchstaben und Bindestrichen. Lasst dieses Feld einfach leer, dann wird sie automatisch generiert.
+
+Gewünschte Farbe & „Select event symbol type“: Lasst hier bitte zwecks Übersichtlichkeit die Standard-Einstellungen ausgewählt.
+
+:::caution Achtung
+Es scheint aktuell einen Fehler im Kalender-Plugin zu geben, bei dem das Icon des
+Kalenders nicht standardmäßig auch als Icon für einen Termin ausgewählt wird. Überprüft das vor dem Absenden des Formulars bitte und wählt ggf. noch einmal das Icon eures Kalenders aus der Liste aus.
+:::
+
+Startet am & Endet am: Selbsterklärend. Wählt hier das Datum und die Uhrzeit, zu der euer Termin startet und endet. Darunter habt ihr die Möglichkeit, euren Termin als ganztägig festzulegen und die End-Uhrzeit im Kalender zu verbergen (open end).
+Wiederholungsmuster: Findet euer Termin öfter statt, müsst ihr nicht jedes Mal wieder einen neuen Termin erstellen. Klickt auf „Wiederholung einstellen“ und wählt ein Muster aus, in dem sich der Termin wiederholen soll.
+
+  </TabItem>
+  <TabItem value="einfuehrung" label="Einführung">
+
+**Bilder**: Hier könnt ihr ein Titelbild für euren Termin auswählen. Dieses wird unter anderem angezeigt, wenn man im Kalender mit der Maus über euren Termin fährt.
+
+**Einführung**: Ein (längerer) Text, der euren Termin beschreibt. Wichtig: Das ist hier der Haupttext, der im Termin auftaucht.
+
+**Kurzbeschreibung**: Die wichtigste Info in Kürze, maximal 130 Zeichen. Wird angezeigt, wenn man im Kalender mit der Maus über euren Termin fährt.
+
+**Externer Link**: Habt ihr zum Beispiel eine Facebook-Veranstaltung für euren Termin, könnt ihr den Link dorthin hier einfügen.
+  
+  </TabItem>
+  <TabItem value="veranstaltungsort" label="Veranstaltungsort">
+
+**Select Event Location**: Wählt hier einen bereits bestehenden Veranstaltungsort aus der Liste aus. Nur wenn euer Ort nicht in der Liste existiert, wählt „Insert new location“ und tragt die Details des Ortes ein. Campus-Raumnummern (z.B. C9.113) tragt in das Feld „Address“ ein.
+
+:::caution Achtung
+Wählt als „Type“ für neue Orte immer Virtual aus, da das System sonst eine genaue
+Adresse für den Ort verlangt, was zum Beispiel bei Campusraumnummern nicht sehr hilfreich ist.
+:::
+
+**Location Details**: Euer Veranstaltungsort ist schwer zu finden? Tragt hier zusätzliche Informationen ein.
+  </TabItem>
+  <TabItem value="zeitplan" label="Zeitplan">
+
+Habt ihr eine umfangreiche Veranstaltung, für die es einen festen Zeitplan gibt, könnt ihr diesen hier aufführen, damit Besucher*innen der Website sich diesen anschauen können. Klickt auf „Zeitspanne hinufügen“. Dort könnt ihr auswählen, wann dieser Teil eures Events starten soll, ihm einen Titel, ein besonderes Icon und eine Farbe geben, sowie ihn kurz beschreiben.
+  </TabItem>
+  <TabItem value="gaeste" label="Gäste">
+
+Ihr habt besondere Gäste auf eurer Veranstaltung, die ihr unbedingt hervorheben wollt? Klickt auf „Gast hinzufügen“ und ihr habt die Möglichkeit, diese Person mit Bild, Namen und einer Beschreibung vorzustellen. Ihr könnt außerdem Links zu Profilen auf sozialen Netzwerken dieser Person einfügen.
+  </TabItem>
+  <TabItem value="anhaenge" label="Anhänge">
+
+Ihr wollt eine Datei an eure Veranstaltung anhängen, zum Beispiel eine PDF mit einem Formular, was die Gäste mitbringen sollen? Dann könnt ihr das hier erledigen. Klickt ihr auf „Anhang hinzufügen“ öffnet sich der Medien-Uploader. Hier könnt ihr aber nicht nur Bilder hochladen, sondern auch Dokumente wie zum Beispiel PDF Dateien.
+
+
+  </TabItem>
+</Tabs>
+
+## Termin veröffentlichen
+
+Seid ihr mit dem Erstellen eures Termines fertig, klickt unten auf „Termin hinzufügen“. Euer Termin wird nun im Kalender angezeigt.
+
+
+:::tip Übrigens
+Übrigens: Wenn Referate (und manche Servicebetriebe/das StuPa) bevorstehende Termine haben, werden diese unten in ihrer Seitenleiste angezeigt!
+:::
+
