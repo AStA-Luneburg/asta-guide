@@ -26,12 +26,12 @@ const config = {
           // Please change this to your repo.
           editUrl: 'https://github.com/asta-luneburg/asta-guide/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   editUrl:
-        //     'https://github.com/asta-luneburg/asta-guide/tree/main/packages/create-docusaurus/templates/shared/',
-        // },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/asta-luneburg/asta-guide/tree/main/packages/create-docusaurus/templates/shared/',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -43,10 +43,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'AStA Guide',
+        title: '',
         logo: {
           alt: 'AStA Logo',
-          src: 'img/asta-logo.svg',
+          src: 'img/logo-white.png',
         },
         items: [
           {
@@ -55,6 +55,7 @@ const config = {
             position: 'left',
             label: 'Anleitungen',
           },
+          { to: 'blog', label: 'Dev Log', position: 'left' },
           {
             href: 'https://asta-lueneburg.de',
             label: 'AStA Homepage',
@@ -64,6 +65,11 @@ const config = {
       },
       footer: {
         style: 'dark',
+        logo: {
+          alt: 'AStA Logo',
+          src: 'img/logo-white.png',
+          href: 'https://asta-lueneburg.de',
+        },
         links: [
           {
             title: 'AStA Services',
@@ -97,7 +103,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} AStA Lüneburg`,
+        copyright: `Betrieben durch den Allgemeinen Student*innenausschuss der Universität Lüneburg.`,
       },
       prism: {
         theme: lightCodeTheme,

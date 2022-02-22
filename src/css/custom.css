@@ -15,9 +15,15 @@
   --ifm-color-primary-lightest: #e79595;
   --ifm-background-color: #eaeaea;
   --ifm-navbar-background-color: #224c6c;
-  --ifm-navbar-link-color: #f0f6fa;
-  --ifm-navbar-link-hover-color: #84b4d8;
+  --ifm-navbar-link-color: #84b4d8;
+  --ifm-navbar-link-hover-color: #44789d;
+  --ifm-navbar-link-active-color: #f00;
   --logo-background-color: #f0f6fa;
+  --navbar-text: #f0f6fa;
+}
+
+.navbar__brand, .navbar__link--active, .navbar__link--active:hover {
+  color: var(--navbar-text);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -31,10 +37,11 @@
   --ifm-color-primary-lightest: #4fddbf;
 }*/
 
-.navbar__logo img {
+
+/*.navbar__logo img {
   background: var(--logo-background-color);
   border-radius: 7px;
-}
+}*/
 
 .navbar__toggle {
   color: var(--ifm-navbar-link-color);
@@ -56,6 +63,7 @@
   float: left;
 }
 
+
 main img {
   border-radius: 5px;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -63,9 +71,18 @@ main img {
   margin: auto;
 }
 
+.avatar__photo img {
+  border: none;
+}
+
 main p img {
   display: flex;
   justify-content: center;
+}
+
+.footer__copyright {
+  font-size: 10px;
+  color: #6e7684;
 }
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
