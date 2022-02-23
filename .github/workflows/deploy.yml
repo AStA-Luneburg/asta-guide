@@ -20,7 +20,7 @@ jobs:
           npm ci
           npm build
       - name: Upload ftp
-        uses: genietim/ftp-action@releases/v4
+        uses: genietim/ftp-action
         with:
           host: ${{ secrets.FTP_SERVER }}
           user: ${{ secrets.FTP_USERNAME }}
