@@ -17,7 +17,7 @@ jobs:
       - name: Build website
         run: |
           npm ci
-          npm build
+          npm run build
       - name: Upload ftp
         uses: genietim/ftp-action@9aec41ec4f779cdb6d7f20ef6d0edbf094a7a0b4
         with:
