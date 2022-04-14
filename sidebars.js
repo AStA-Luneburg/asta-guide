@@ -49,7 +49,29 @@ const sidebars = {
     },
     'galerie',
     'kalender',
-    'beschlussdatenbank'
+    'beschlussdatenbank',
+    
+    {
+      type: 'category',
+      label: 'Bettenbörse',
+      items: [
+        {
+          type: 'doc',
+          id: 'bettenboerse/verwaltung',
+          label: 'Verwaltung der Bettenbörse',
+        },
+        {
+          type: 'doc',
+          id: 'bettenboerse/einrichtung',
+          label: 'Einrichtung des Plugins',
+        },
+        {
+          type: 'doc',
+          id: 'bettenboerse/entwickler',
+          label: 'Entwicklerinformationen',
+        },
+      ],
+    },
   ],
    
 };

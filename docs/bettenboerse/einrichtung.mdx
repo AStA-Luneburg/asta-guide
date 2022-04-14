@@ -1,0 +1,21 @@
+# Einrichtung des Plugins
+
+Das dazugehörige WordPress-Plugin "Bettenbörse" benötigt passende Konfiguration, um richtig zu funktionieren.
+So erzeugt das Plugin selber kein eigenes Anmelde-Formular, sondern baut dafür auf WPForms auf.
+
+
+### Konfiguration / Erstellung des Formulars
+Um Aufwand zu sparen und das Plugin zu vereinfachen erzeugt das Plugin keine eigenen Formulare. Stattdessen werden WPForms-Formulare abgehört und die Daten in Einträge umgewandelt.
+
+### Verlinkung des Formulars mit dem Plugin
+Damit Daten in das System eingespeist werden können, muss das Plugin mit einem WPForms Formular verlinkt werden. In den [Einstellungen der Bettenbörse](https://asta-lueneburg.de/wp-admin/options-general.php?page=bettenboerse_settings) muss daher die ID des genutzten Formulars eingetragen werden.
+
+
+![](/img/bettenboerse/formular-verlinken.png)
+
+Jetzt weiß das Plugin, welches Formular "abgehört" werden soll. Allerdings müssen zusätzlich auch die einzelnen Felder des Formulars den entsprechenden Variablen eines Eintrages zugewiesen werden. Auch dies kann in den [Einstellungen](https://asta-lueneburg.de/wp-admin/options-general.php?page=bettenboerse_settings) getan werden.
+
+
+:::info
+Das Häckchen zum akzeptieren der Datenschutzerklärung wird auch als Feld gezählt, und benötigt deshalb auch einen 
+:::
