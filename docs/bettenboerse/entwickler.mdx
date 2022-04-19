@@ -1,5 +1,26 @@
 # Entwicklerinformationen
 
+## `ASTA_ENV` Konstante
+
+Das Plugin verwendet intern die PHP `ASTA_ENV` Konstante, um zwischen der Entwicklungs- und Live-Umgebung zu unterscheiden.
+
+Der Check sieht meist wie folgt aus:
+
+```php
+if (defined('ASTA_ENV') && ASTA_ENV == 'development') {
+    // Dev-Env
+} else {
+    // Production
+}
+```
+
+Es ist bei der Entwicklung also hilfreich, in der `wp-config.php`-Datei folgenden Code hinzuzufügen.
+
+```php
+define('ASTA_ENV', 'development');
+```
+
+
 ## Ablaufdiagramm
 <center>
     <img src="/img/bettenboerse/Klassendiagramm.svg" style={{boxShadow: 'none', padding: '20px'}} />
