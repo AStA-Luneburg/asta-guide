@@ -1,0 +1,117 @@
+---
+sidebar_position: 1
+---
+
+import ImageAside from '@site/src/components/ImageAside';
+
+# Bildbeschreibungen für Menschen mit Sehbeeinträchtigungen (Alternativ-Texte)
+
+Die Veröffentlichungen des AStA sollen für alle Menschen konsumierbar sein. Dafür ist es wichtig, dass auf die Barrierefreiheit von Posts in den verschiedenen Medien geachtet wird. Inbesondere bei Bild- & Videomaterial muss darauf geachtet werden, dass wichtige Informationen auch als Text angeboten werden.
+
+Hierfür werden sogenannte "Alternativ-Texte" (kurz "ALT-Text") verwendet, die mit dem Bild/Video zusammen eingebettet werden. Sowohl die Webseite als auch soziale Medien wie Instagram bieten Textfelder an, in denen dieser Text eingegeben werden kann. Dieser kurze Text wird zusammen mit dem Bild angezeigt und ist sowohl für Computer (Suchmaschinen etc.) als auch für Menschen mit Sehbeeinträchtigungen gedacht, und soll den Inhalt des Bildes wiederspiegeln.
+
+![Beispielfoto, dass einen ALT-Text darstellt](/img/barrierefreiheit/bild-mit-alt-text.png)
+
+<br />
+
+## Alternativ-Texte auf der Webseite hinzufügen
+
+
+
+
+import chooseImage from '@site/static/img/barrierefreiheit/bild-auswaehlen.png';
+
+<ImageAside src={chooseImage} third={true} reverse={true}>
+Auf der Webseite kannst du jedes Bild, das du hochlädst, sowohl mit einem Alternativ-Text als auch mit einer Caption versehen. Die Caption ist optional und kann bei Bedarf als Bild-"Untertitel" verwendet werden.
+
+**Einen Alternativ-Text solltest du aber unbedingt hinzufügen.** Das geht folgendermaßen:
+
+Wenn das Bild bereits hochgeladen ist, kannst du über "Ersetzen" die Mediathek öffnen. Alternativ kannst du die [Mediathek](https://www.asta-lueneburg.de/wp-admin/upload.php) auch direkt aufrufen.
+
+Hier kannst du nun das gewünschte Foto auswählen.
+</ImageAside>
+
+<br />
+
+![Der Bild-Editor mit einem Beispielplakat](/img/barrierefreiheit/bild-editor.png)
+
+<br />
+
+import altEditorImage from '@site/static/img/barrierefreiheit/bild-editor-alt.png';
+
+<ImageAside src={altEditorImage} third={true} reverse={true}>
+
+In den "Anhang-Details" kannst du verschiedene Informationen zu einem Bild (oder einem PDF-Dokument) hinterlegen.
+
+Im Feld "_Alternativer-Text_" kannst du die Bildbeschreibung hinzufügen.
+
+Dieser Text wird nun vorgelesen, wenn die Webseite mit einem Screen-Reader aufgerufen wird.
+</ImageAside>
+
+
+import captionEditorImage from '@site/static/img/barrierefreiheit/bild-editor-caption.png';
+
+<ImageAside src={captionEditorImage} third={true} reverse={true}>
+
+Im Feld "_Beschriftung_" kannst du die Bildbeschreibung hinzufügen.
+
+Eine Caption sieht auf der Webseite dann so aus:
+<img src="/img/barrierefreiheit/caption-example.png" alt="Beispielfoto mit Caption" style={{ display: 'inline' }} />
+
+</ImageAside>
+
+
+<br />
+
+## Alternativ-Texte in eigenes HTML einbetten
+
+Wenn irgendwo eigenes HTML einfügen willst, kannst du den ALT-Text auch direkt im `img`-Element versehen:
+
+```html
+<img src="https://asta-lueneburg.de/mein-bild.jpg" alt="Hier steht mein ALT-Text zum Bild!" />
+```
+
+<br />
+
+## Alternativ-Texte auf Instagram hinzufügen
+Dieser Teil des Guides ist noch in Arbeit. Du kannst die Informationen über Instagram Alt-Texte solange [hier nachlesen](https://blog.contentstudio.io/instagram-alt-text/).
+
+<br />
+
+
+
+## Wie schreibe ich gute Alternativ-Texte?
+
+Damit deine Alternativ-Texte möglichst hilfreich sind, findest du hier ein paar Tipps, mit denen du bessere Texte schreiben kannst.
+
+### Tipp 1: Sei spezifisch in der Beschreibung
+
+Beschreibe den Inhalt des Bildes und sage nur, was du siehst. Stelle dabei keine Vermutungen an, z.B. über das Geschlecht oder was außerhalb des Bildes passiert.
+
+**Stelle dir einfach vor, du müsstest das Bild am Telefon beschreiben.** Versuche dich also kurz zu halten und nicht mehr als 125 Zeichen zu verwenden.
+
+<br />
+
+### Tipp 2: Beginne niemals mit "_Bild von..._" oder "_Foto von..._"
+
+Es ist sowohl für einen Menschen als auch für eine Maschine offensichtlich, dass es sich bei dem Text, auf den sie zugreifen, um Alt-Text handelt.
+
+Stelle Dir vor, wie frustrierend es wäre, ein Bildschirmlesegerät auf einer bildlastigen Seite zu verwenden und dann zu lesen: "Bild des Theaters" "Bild des vorderen Bereichs" "Bild der Außenbeschilderung" "Bild des Kassenpersonals" "Bild des Zuschauerraums" "Bild der Bühne"...
+
+Es ist jedoch gut, den Leuten zu helfen, den Kontext zu verstehen, so dass es nützlich sein kann, die Art des Bildes zu erklären - z.B. Headshot, Illustration, Diagramm, Screengrab etc...
+
+<br />
+
+### Tipp 3: Füge Text ein, der Teil des Bildes ist
+
+Wenn Text Teil eines Bildes ist, solltest du ihn als Teil Ihrer Beschreibung wiedergeben. Es sei denn, du musst dich wiederholen...
+
+<br />
+
+### Tipp 4: Wiederhole dich nicht
+
+Alt-Text ist nicht erforderlich, wenn er wiederholen würde, was bereits auf der Seite steht. Zum Beispiel eine nebenstehende Überschrift. Oder wenn das "Bild" einer Veranstaltung ein stark gestaltetes Titelbild ist und Sie sich bereits auf der Veranstaltungsseite befinden - dann ist es nicht nötig, den Titel der Show als Alt-Text hinzuzufügen. Warum? Weil er bereits in der Seitenüberschrift enthalten ist.
+
+<br />
+
+_Die Tipps sind eine übersetzte Version folgender Seite: [https://supercooldesign.co.uk/blog/how-to-write-good-alt-text](https://supercooldesign.co.uk/blog/how-to-write-good-alt-text)_

@@ -50,7 +50,6 @@ const sidebars = {
     'galerie',
     'kalender',
     'beschlussdatenbank',
-    
     {
       type: 'category',
       label: 'Bettenbörse',
@@ -70,6 +69,17 @@ const sidebars = {
           id: 'bettenboerse/entwickler',
           label: 'Entwicklerinformationen',
         },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Barrierefreiheit',
+      items: [
+        {
+          type: 'doc',
+          id: 'barrierefreiheit/bilder-alt-texte',
+          label: 'Bildbeschreibungen (ALT-Texte)'
+        }
       ],
     },
   ],

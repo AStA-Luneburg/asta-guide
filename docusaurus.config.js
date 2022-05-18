@@ -28,6 +28,9 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          feedOptions: {
+            type: 'all',
+          },
           // Please change this to your repo.
           editUrl:
             'https://github.com/asta-luneburg/asta-guide/tree/main/packages/create-docusaurus/templates/shared/',
