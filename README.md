@@ -1,41 +1,55 @@
-# Website
+# AStA Guide
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Der Guide des AStA Lüneburg ist die interne HowTo-Seite mit Anleitungen für die Webseite (https://asta-lueneburg.de) und mehr.
+Sie ist mit [Docusaurus 2](https://docusaurus.io/) gebaut, einem modernen Static-Site-Generator.
 
-### Installation
+## Lokale Entwicklung
 
-```
-$ yarn
-```
+Die Seite kann lokal gestartet werden, um Änderungen vor der Veröffentlichung anzusehen. Dafür müssen Node.js und NPM auf deinem PC installiert sein.
 
-### Local Development
+Dann kannst du folgende Befehle ausführen:
+```sh
+# Die Repository auf deinen PC klonen
+$ git clone git@github.com:AStA-Lueneburg/asta-guide
 
-```
-$ yarn start
-```
+# In den neuen Ordner wechseln
+$ cd asta-guide/
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
+# Docusaurus etc. installieren
+$ npm install
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+Jetzt ist die Umgebung vorbereitet und der Entwicklungs-Server kann gestartet werden.
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```sh
+$ npm start
 ```
 
-Not using SSH:
+Nun kannst du Änderungen vornehmen, die automatisch in der Vorschau aktualisiert werden.
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+## Änderungen veröffentlichen
+
+Um deine Änderungen zu veröffentlichen, musst du sie nur per Git in diese Repository pushen.
+[Eine GitHub Action](.github/workflows/deploy.yml), die auf Pushes hört, **generiert die Seite dann automatisch und lädt sie per FTP auf den AStA-Server.**
+Auf der [Übersicht](https://github.com/AStA-Luneburg/asta-guide/actions) kannst du nachsehen, ob die Veröffentlichung erfolgreich war.
+
+```sh
+# Änderungen hinzufügen
+$ git add .
+
+# Änderungen committen
+$ git commit -m "Meine Änderungen"
+
+# Änderungen pushen
+$ git push
+
+# ... die Seite wird nun automatisch deployed.
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Falls du die Seite manuell hochladen möchtest, kannst du sie folgendermaßen lokal generieren:
+
+```sh
+$ npm run build
+```
+
+Der Inhalt wird in den `build`-Ordner generiert. Dieser enthält statisches HTML/CSS/JS und kann fast überall hochgeladen werden.
