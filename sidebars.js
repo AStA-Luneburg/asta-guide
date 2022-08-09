@@ -82,6 +82,32 @@ const sidebars = {
         }
       ],
     },
+    {
+      type: 'category',
+      label: '9€ Ticket Administration',
+      items: [
+        {
+          type: 'doc',
+          id: 'ticket-refund/admin-dashboard',
+          label: 'Admin-Dashboard',
+        },
+        {
+          type: 'doc',
+          id: 'ticket-refund/berechtigte-studierende',
+          label: 'Berechtigte Studierende',
+        },
+        {
+          type: 'doc',
+          id: 'ticket-refund/rueckerstattungen',
+          label: 'Rückerstattungen',
+        },
+        {
+          type: 'doc',
+          id: 'ticket-refund/rueckerstattungen-exportieren',
+          label: 'Rückerstattungen exportieren',
+        },
+      ],
+    },
   ],
    
 };

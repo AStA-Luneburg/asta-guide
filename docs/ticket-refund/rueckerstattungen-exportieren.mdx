@@ -1,0 +1,37 @@
+# Rückerstattungen exportieren
+
+:::info
+Um Rückerstattungen zu exportieren, muss ein "Export" erstellt werden. Die Rückerstattungen sind dann an diesen gebunden, damit diese nicht in mehreren Exports auftauchen.
+:::
+
+## Erstellen von Exports
+
+- **Wenn ein Export erstellt wird, werden alle noch nicht exportierten Rückerstattungen zu diesem hinzugefügt.**
+  - Maximal sind das 999 Stück, da Banken oft nicht mehr auf einmal annehmen
+- Die Rückerstattungen können dann sowohl im Excel-Format (`.xlsx`) als auch im CSV-Format (`.csv`) heruntergeladen werden.
+  - Die Spalten der heruntergeladenen Dateien sind direkt mit [SEPAapp](https://sepaapp.eu) kompatibel, damit diese einfach in SEPA-XML Dateien umgewandelt werden können. Viele Banken wollen solche Dateien haben.
+
+<br />
+
+
+| Liste aller Exports | Erstellen eines Exports |
+|--|--|
+| [![screenshot-exports](https://user-images.githubusercontent.com/10093858/183748210-9e541823-6aa8-4c13-b2a7-46381fb69e70.png)](https://user-images.githubusercontent.com/10093858/183748210-9e541823-6aa8-4c13-b2a7-46381fb69e70.png) | [![screenshot-exports_create](https://user-images.githubusercontent.com/10093858/183745516-96fde5a9-cd33-4cc1-8f56-8e73ec1b1b67.png)](https://user-images.githubusercontent.com/10093858/183745516-96fde5a9-cd33-4cc1-8f56-8e73ec1b1b67.png) |
+| **Export inkl. Rückerstattungen** | Exportierte Excel-Datei |
+| [![screenshot-exports](https://user-images.githubusercontent.com/10093858/183745295-ef35fb58-08de-470b-8e77-c59f57d4196a.png)](https://user-images.githubusercontent.com/10093858/183745295-ef35fb58-08de-470b-8e77-c59f57d4196a.png) | [![screenshot-excel_export](https://user-images.githubusercontent.com/10093858/183748857-0f0306f8-5995-419f-a047-8f77a8aad198.png)](https://user-images.githubusercontent.com/10093858/183748857-0f0306f8-5995-419f-a047-8f77a8aad198.png) |
+
+
+<br />
+
+### Manuelles exportieren einzelner Rückerstattungen
+Einzelne Rückerstattungen können auch heruntergeladen werden, indem diese in der Tabelle ausgewählt und dann exportiert werden.
+
+:::warning Achtung
+Diese sind dann NICHT Teil eines Exports, es muss dann selber darauf geachtet werden, dass an diese Personen nicht mehrmals überwiesen wird!
+:::
+
+<br />
+
+| Manuelles auswählen der Rückerstattungen | Manuelles herunterladen |
+|--|--|
+| [![screenshot-export_select_small](https://user-images.githubusercontent.com/10093858/183749302-a1628b04-f6a2-484d-878a-64ad851fde89.png)](https://user-images.githubusercontent.com/10093858/183749302-a1628b04-f6a2-484d-878a-64ad851fde89.png) | [![screenshot-export_select_actions_small](https://user-images.githubusercontent.com/10093858/183749338-f00c3379-48d0-41e4-94d0-5e47d85d9a53.png)](https://user-images.githubusercontent.com/10093858/183749338-f00c3379-48d0-41e4-94d0-5e47d85d9a53.png) |
