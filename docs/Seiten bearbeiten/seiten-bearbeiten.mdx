@@ -4,70 +4,93 @@ import ImageAside from '@site/src/components/ImageAside';
 
 # Seiten bearbeiten
 
-Dies ist vermutliche die wichtigste Funktion für alle. Alle Referate, Servicebetriebe und das StuPa besitzen eigene Unterseiten auf der Website, die von euch selbst verwaltet werden können. Um eure Seite zu bearbeiten, gibt es zwei Möglichkeiten:
+Dies ist vermutliche die wichtigste Funktion für alle. Alle Referate, Servicebetriebe und das StuPa besitzen eigene Unterseiten auf der Website, die von euch selbst verwaltet werden können.
 
-**A)** Geht auf der AStA-Website auf eure Seite, die ihr bearbeiten wollt, und klickt in der Leiste oben auf „Seite bearbeiten“.
+## How to
+### Möglichkeit 1
 
-![](/img/guide-pics/image8.png)
+import image8_neu from '@site/static/img/guide-pics/image8_neu.png';
 
-**B)** Klickt im Adminbereich in der Leiste links auf „Seiten“.
+<ImageAside src={image8_neu}>
+    Geht auf der AStA-Website auf eure Seite, die ihr bearbeiten wollt, und klickt in der Leiste oben auf „Seite bearbeiten“.
+</ImageAside>
 
-![](/img/guide-pics/image9.png)
 
-Es wird euch eine Übersicht der Seiten angezeigt, die ihr verfasst habt/die ihr verwalten könnt. Im Falle von Referaten sollte das nur jeweils eine sein. Klickt bei dieser dann auf „bearbeiten“.
+### Möglichkeit 2
 
-![](/img/guide-pics/image10.png)
+import image9 from '@site/static/img/guide-pics/image9.png';
+import image10 from '@site/static/img/guide-pics/image10.png';
+
+<ImageAside src={image9}>
+    Klickt im Adminbereich in der Leiste links auf „Seiten“.
+    Es wird euch eine Übersicht der Seiten angezeigt, die ihr verfasst habt/die ihr verwalten könnt. Im Falle von Referaten sollte das nur jeweils eine sein. Klickt bei dieser dann auf „bearbeiten“.
+</ImageAside>
+<ImageAside src={image10}>
+</ImageAside>
 
 Egal, welchen Weg ihr gewählt habt, solltet ihr nun im Editor landen.
 
-## Der Seiten Editor
+## Der Seiteneditor
 
 ![](/img/guide-pics/image11.png)
 
-Die Benutzung des Editors ist relativ simpel. Im Großen Feld in der Mitte schreibt ihr den Text für eure Seite. Dabei stehen euch verschiedene sogenannte Blöcke zur Verfügung. Schreibt ihr einen Absatz, ist das zum Beispiel ein Block. Diesen könnt ihr mit den klassischen Formatierungsoptionen (Fett/Kursiv/Unterstrichen) versehen, ihr könnt Verlinkungen einfügen, etc...
+Im Seiteneditor erstellt ihr eure Seite mit Hilfe der Wordpress Blocks so, wie ihr sie haben wollt. Im großen Feld in der Mitte schreibt ihr den Text für eure Seite. Schreibt ihr einen Absatz, ist das zum Beispiel ein Block. Eine Überschrift wäre auch ein Block. ABsätze könnt ihr mit den klassischen Formatierungsoptionen (Fett/Kursiv/Unterstrichen) versehen, ihr könnt Verlinkungen einfügen, etc...
 
-Ein Block kann aber zum Beispiel auch ein Bild sein, welches ihr in euren Beitrag einfügt, oder ein in die Seite eingebettetes YouTube-Video. Der Editor bietet euch hier eine Fülle von Optionen, die an dieser Stelle nicht alle erklären werden können. Das meiste sollte allerdings selbsterklärend sein, spielt also gerne einfach ein wenig rum. Habt ihr eine Frage zu einem bestimmten Block, könnt ihr gerne den Webmaster anschreiben.
+Ein Block kann aber zum Beispiel auch ein Bild sein, welches ihr in euren Beitrag einfügt, oder ein in die Seite eingebettetes YouTube-Video, ein PDF oder ein Formular, das Daten abfragt und sammelt.
+
+:::info
+Das Meiste der Funktionen sollte selbsterklärend sein, spielt also gerne einfach ein wenig rum. Bei Fragen, wie spezifische Vorstellungen von euch umgesetzt werden können, oder wenn ihr Hilfe braucht, meldet euch jederzeit gerne an den/die Webmaster*in (webmaster@asta-lueneburg.de).
+:::
+
+### Einen Block einfügen
 
 import image12 from '@site/static/img/guide-pics/image12.png';
+import image12_Blocki from '@site/static/img/guide-pics/image12_BlockInserter.png';
 
 <ImageAside src={image12}>
 	Ihr fügt einen Block ein, in dem ihr oberhalb eines bereits existierenden Blockes (oder ganz am Ende der Seite) auf das erscheinende „+“ klickt. Daraufhin könnt ihr den Block-Typ auswählen.
+    <br/><br/>
+    Über einen Klick oben links in der Kopfzeile könnt ihr auch den Block-Inserter ausklappen und damit arbeiten.
 </ImageAside>
 
+<ImageAside src={image12_Blocki}>
+</ImageAside>
 
 ### Bilder einbinden
 Da die wohl wichtigste Funktion ist, Bilder in eure Seiten einzufügen, wird diese hier noch einmal genauer erklärt.
 
-import image13 from '@site/static/img/guide-pics/image13.png';
+Über einen Klick auf das Plus zwischen zwei Blöcken fügt ihr einen neuen Block „Bild“ hinzu. Ihr solltet jetzt folgendes Bild angezeigt bekommen:
 
-<ImageAside src={image13} third>
-	Wählt ihr „Bild“ als Typ aus, erscheint der Block mit einer kurzen Beschreibung, wie ihr ein Bild einfügt. Im Grunde macht ihr dann genau das: Klickt entweder auf „Hochladen“ und wählt ein Bild von eurem Computer aus, welches dann auf den Server hochgeladen wird, oder klickt auf
-</ImageAside>
+![](/img/guide-pics/image13_Bildeinfuegen.png)
 
+Klickt entweder auf „Hochladen“ und wählt ein Bild von eurem Computer aus, welches dann auf den Server hochgeladen wird, oder klickt auf „Mediathek“ und wählt ein Bild aus, welches bereits einmal hochgeladen wurde.
 
-„Mediathek“ und wählt ein Bild aus, welches bereits einmal hochgeladen wurde. In beiden Fällen sollte das Bild nun im Editor angezeigt werden. Direkt darüber habt ihr die Möglichkeit, verschiedene Filter oder einen Textumfluss einzustellen, das heißt, dass falls das Bild klein genug ist, Text links oder rechts neben diesem angezeigt werden kann.
-
-:::info
-Die Größe des Bildes kann angepasst werden, indem ihr im Editor an den blauen Punkten rechts und unter dem Bild zieht.
+:::caution Wichtig
+Wenn ihr das Bild ausgewählt habt, gebt bei Alternativtext (Alt-Text, mehr dazu auch weiter unten) gerne eine Kurzbeschreibung des Bildes an, sollte es relevant für euren Inhalt sein. Dann können Screenreader für Menschen mit Sehbeeinträchtigungen diesen Alternativtext vorlesen.
 :::
 
+**Das Bild sollte jetzt im Editor angezeogt werden.**
+
+Direkt darüber habt ihr die Möglichkeit, verschiedene Filter oder einen Textumfluss einzustellen, das heißt, dass falls das Bild klein genug ist, Text links oder rechts neben diesem angezeigt werden kann.
+
+import image13 from '@site/static/img/guide-pics/image13.png';
+<ImageAside src={image13}>
+    Die Größe des Bildes kann angepasst werden, indem ihr im Editor an den blauen Punkten rechts und unter dem Bild zieht.
+    <br/><br/>
+    Auch wenn der Block an der falschen Position gelandet ist, kann er über die Pfeile in der Leiste per Klick vor/hinter einen anderen Block gezogen werden, oder durch Drag and Drop über die Schaltfläche mit den sechs Punkten an eine andere Stelle gezogen werden.
+</ImageAside>
+
 Unter dem Bild habt ihr außerdem die Möglichkeit, eine Beschriftung einzugeben, die dann wie im Editor auch auf der Seite angezeigt wird. Praktisch, falls ihr in ein paar Wörtern nochmal auf das Bild eingehen wollt, ohne es in euren eigentlichen Text zu schreiben.
- 
-  
-
-
 
 import image14 from '@site/static/img/guide-pics/image14.png';
 
 <ImageAside src={image14} third={true}>
-Klickt ihr auf euren Bild-Block, ändert sich außerdem die Seitenleiste rechts. Dort könnt ihr noch einmal spezifische Optionen zu eurem Bild einstellen. Dies trifft übrigens auch auf die meisten anderen Block-Typen zu.
-
+Klickt ihr auf euren Bild-Block, ändert sich auch die Seitenleiste rechts. Dort könnt ihr noch einmal spezifische Optionen zu eurem Bild einstellen. Dies trifft übrigens auch auf die meisten anderen Block-Typen zu.
 <br/><br/>
-
-Zum Beispiel hier einen Darstellungsstil für euer Bild einstellen, um diesem zum Beispiel abgerundete Kanten zu geben. Der „Alt-Text“ ist eine Option zur Barrierefreiheit. Hiermit kann zum Beispiel das Bild Menschen mit Seheinschränkungen „erklärt“ werden, indem der Computer den Alt-Text vorliest. Auch wird der Text angezeigt, falls es Probleme mit der Bilddatei gibt und diese nicht angezeigt werden kann.
+Zum Beispiel hier einen Darstellungsstil für euer Bild einstellen, um diesem zum Beispiel abgerundete Kanten zu geben.
+<br/><br/>
+Der <b>Alt-Text</b> ist eine Option zur Barrierefreiheit. Hiermit kann zum Beispiel das Bild Menschen mit Seheinschränkungen erklärt werden, indem der Computer den Alt-Text vorliest. Auch wird der Text angezeigt, falls es Probleme mit der Bilddatei gibt und diese nicht angezeigt werden kann.
 </ImageAside>
-
-
 
 ## Seite veröffentlichen
 Um die Änderungen an eurer Seite zu bestätigen und sie zu veröffentlichen, klickt oben rechts auf den blauen Button „Aktualisieren“.

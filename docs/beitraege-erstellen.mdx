@@ -1,23 +1,44 @@
 ---
 sidebar_position: 2
 ---
+import ImageAside from '@site/src/components/ImageAside';
 
-# Beiträge erstellen 
 
-Ihr habt Neuigkeiten aus euren Referaten, Servicebetrieben oder dem StuPa, die ihr veröffentlichen wollt? Perfekt! Alle haben die Möglichkeit (und ihnen wird ans Herz gelegt!), sogenannte Beiträge zu veröffentlichen, die dann auf der Startseite angezeigt werden und so alle über Neuigkeiten aus dem AStA/StuPa informiert werden.
+# Beiträge erstellen
 
-![](/img/guide-pics/image29.png)
+Ihr habt Neuigkeiten aus euren Referaten, Servicebetrieben oder dem StuPa, die ihr veröffentlichen wollt? Perfekt! Alle haben die Möglichkeit (und die wird euch ans Herz gelegt!), sogenannte Beiträge zu veröffentlichen. Die werden dann unter „Aktuelles“ veröffentlicht und sollen so über AStA/StuPa Arbeit informieren.
 
-Um einen Beitrag zu erstellen, klickt ganz einfach in der Leiste oben auf der AStA Website auf „Beitrag“ unter „Neu“. Es öffnet sich anschließend derselbe Editor, den ihr auch schon vom Bearbeiten/Erstellen eurer Seiten kennt. Und genau so funktioniert auch das Erstellen von Beiträgen. Auch hier stehen euch alle Blöcke zur Verfügung, um den Beitrag zu schreiben und aufzuhübschen. Vor dem Veröffentlichen müssen allerdings noch ein paar Einstellungen getätigt werden.
+
+## How to
+
+import image29_neu from '@site/static/img/guide-pics/image29_neu.png';
+
+<ImageAside src={image29_neu} third={true}>
+    Um einen Beitrag zu erstellen, klickt ganz einfach in der Leiste oben auf der AStA Website auf „Beitrag“ unter „Neu“. Es öffnet sich derselbe Editor wie zum Bearbeiten/Erstellen von Seiten. Hier stehen euch alle Blöcke zur Verfügung, um den Beitrag zu schreiben und aufzuhübschen.
+</ImageAside>
+
+![](/img/guide-pics/image29_neuerBeitrag.png)
+
+:::caution Wichtig
+Bitte achtet darauf, dass ihr als Unterüberschriften im Text immer nur Header 4 (H4) verwendet und davor einen Abstandshalter mit 40 px Höhe packt.
+:::
+
+** Vor dem Veröffentlichen müssen allerdings noch ein paar Einstellungen getätigt werden.**
+
+:::info
+Vor der Veröffentlichung könnt ihr immer die Vorschaufunktion nutzen, um eventuelle Fehler zu korrigieren, bevor die Öffentlichkeit Zugriff auf den Beitrag erhält.
+:::
 
 ## Kategorie
 
-Euer Beitrag muss einer Kategorie zugeordnet werden, in den allermeisten Fällen der Kategorie eurer Organisation. Öffnet dafür die Box „Kategorien“, indem ihr auf deren Titel klickt. Es erscheint eine Übersicht aller Kategorien. Wählt dort den Namen eurer Organisation aus, indem ihr auf die Box neben deren Namen klickt.
+Euer Beitrag muss einer Kategorie zugeordnet werden, in den allermeisten Fällen der Kategorie eurer Organisation. In der rechten Seitenleiste im Tab „Beitrag“ könnt ihr „Kategorie“ ausklappen (siehe im Bild oben). Dort wählt ihr die passende(n) Kategorien aus.
+
 
 :::info
-Aktuell habe nicht alle Servicebetriebe eine Kategorie. Möchtet ihr einen Beitrag
-posten, findet aber eure Kategorie nicht, kontaktiert bitte erst den Webmaster und wählt keine andere Kategorie aus. Ich lege euch dann eine neue Kategorie an.
+Aktuell haben nicht alle Servicebetriebe eine Kategorie. Möchtet ihr einen Beitrag
+posten, findet aber eure Kategorie nicht, kontaktiert bitte erst den/die Webmaster*in (webmaster@asta-lueneburg.de) und wählt keine andere Kategorie aus. Dann schauen wir gemeinsam, wie wir das gut lösen.
 :::
+
 
 :::caution Wichtig
 In fast allen Fällen sollte der Haken für die Kategorie „Allgemein“ herausgenommen werden, um so eine bessere Übersichtlichkeit bei der Sortierung von Beiträgen zu erreichen.
@@ -25,28 +46,32 @@ In fast allen Fällen sollte der Haken für die Kategorie „Allgemein“ hera
 
 ## Beitragsbild
 
-Jeder Beitrag sollte außerdem über ein Beitragsbild verfügen. Ein Beitragsbild wird auf der Startseite über dem Titel eures Beitrages angezeigt und macht ihn dadurch visuell ansprechender. Öffnet dafür den Reiter „Beitragsbild“ und klickt auf „Beitragsbild festlegen“. Hier könnt ihr (genau wie wenn ihr ein Bild als Block in euren Beitrag/eure Seite einfügt) entweder ein bereits hochgeladenes Bild auswählen, oder aber ein neues hochladen.
+Im besten Fall versorgt ihr euren Beitrag mit einem (aussagekräftigen) Beitragsbild. Dazu in der rechten Seitenleiste im Tab „Beitrag“ ganz oben auf „Beitragsbild festlegen“ klicken. Es öffnet sich ein Fenster, in dem ihr ein Bild hochladen könnt, oder ihr wählt eines aus der Mediathek aus.
+
+![](/img/guide-pics/image29_Beitragsbild.png)
+
+:::caution Wichtig
+Wenn ihr das Bild ausgewählt habt, gebt bei Alternativtext gerne eine Kurzbeschreibung des Bildes an, sollte es relevant für euren Inhalt sein. Dann können Screenreader für Menschen mit Sehbeeinträchtigungen diesen Alternativtext vorlesen.
+:::
 
 ## Sidebar
 
 import image21 from '@site/static/img/guide-pics/image21.png';
-import ImageAside from '@site/src/components/ImageAside';
 
-<ImageAside src={image21} third={true} reverse={true}>
-Abschließend solltet ihr noch einstellen, dass eure Sidebar neben eurem Beitrag angezeigt wird, damit sich interessierte Besucher\*innen gleich an euch wenden können und wissen, von wem der Beitrag kommt. Öffnet hierfür den Reiter „Sidebars“. Hier habt ihr jetzt viele Optionen, die ihr aber alle ignorieren solltet, bis auf die Auswahlbox, die mit „Haupt“ beschriftet ist. In dieser wählt ihr den Namen eurer Organisation aus, falls vorhanden. Andernfalls wird die Seitenleiste des AStA-Büroteams angezeigt.
+<ImageAside src={image21} third={true}>
+Abschließend solltet ihr noch einstellen, dass eure Sidebar neben eurem Beitrag angezeigt wird, damit sich interessierte Besucher*innen gleich an euch wenden können und wissen, von wem der Beitrag kommt. Öffnet hierfür den Reiter „Sidebars“. Hier habt ihr jetzt viele Optionen, die ihr aber alle ignorieren solltet, bis auf die Auswahlbox, die mit „Haupt“ beschriftet ist. In dieser wählt ihr den Namen eurer Organisation aus, falls vorhanden. Andernfalls wird die Seitenleiste des AStA-Büroteams angezeigt.
 </ImageAside>
 
 ## Beitrag veröffentlichen
 
 Nachdem ihr diese ganzen Einstellungen erledigt habt, könnt ihr euren Beitrag nun veröffentlichen. Klickt dafür auf den blauen Button „Veröffentlichen“ oben rechts. 
 
-import image30 from '@site/static/img/guide-pics/image30.png';
+import image30_v from '@site/static/img/guide-pics/image30_veroeffentlichen.png';
 
-<ImageAside src={image30} third={true}>
+<ImageAside src={image30_v} third={true}>
 Ihr habt die Möglichkeit, einen Beitrag zu einem späteren Zeitpunkt zu veröffentlichen, als ihr ihn schreibt. Klickt dafür in der rechten Seitenleiste unter „Status und Sichtbarkeit“ auf das Datum neben „Veröffentlichen“. Ihr könnt nun ein Datum und eine exakte Uhrzeit einstellen, an dem euer Beitrag automatisch vom System veröffentlich wird.
+    Versichert euch vor dem Veröffentlichen gerne nochmal über die Vorschaufunktion, dass sich keine Fehler eingeschlichen haben.
 </ImageAside>
 
-:::info
-Bitte nutzt auch hier genauso wie bei den Seiten vor der Veröffentlichung die Vorschaufunktion, um eventuelle Fehler auszumerzen, bevor die Öffentlichkeit Zugriff auf den Beitrag erhält.
-:::
+
 
