@@ -6,7 +6,7 @@ import ImageAside from '@site/src/components/ImageAside';
 
 Dies ist vermutliche die wichtigste Funktion für alle. Alle Referate, Servicebetriebe und das StuPa besitzen eigene Unterseiten auf der Website, die von euch selbst verwaltet werden können.
 
-## How to
+## How to Bearbeitungsansicht
 ### Möglichkeit 1
 
 import image8_neu from '@site/static/img/guide-pics/image8_neu.png';
@@ -69,7 +69,7 @@ Klickt entweder auf „Hochladen“ und wählt ein Bild von eurem Computer aus,
 Wenn ihr das Bild ausgewählt habt, gebt bei Alternativtext (Alt-Text, mehr dazu auch weiter unten) gerne eine Kurzbeschreibung des Bildes an, sollte es relevant für euren Inhalt sein. Dann können Screenreader für Menschen mit Sehbeeinträchtigungen diesen Alternativtext vorlesen.
 :::
 
-**Das Bild sollte jetzt im Editor angezeogt werden.**
+**Das Bild sollte jetzt im Editor angezeigt werden.**
 
 Direkt darüber habt ihr die Möglichkeit, verschiedene Filter oder einen Textumfluss einzustellen, das heißt, dass falls das Bild klein genug ist, Text links oder rechts neben diesem angezeigt werden kann.
 
@@ -85,12 +85,39 @@ Unter dem Bild habt ihr außerdem die Möglichkeit, eine Beschriftung einzugebe
 import image14 from '@site/static/img/guide-pics/image14.png';
 
 <ImageAside src={image14} third={true}>
-Klickt ihr auf euren Bild-Block, ändert sich auch die Seitenleiste rechts. Dort könnt ihr noch einmal spezifische Optionen zu eurem Bild einstellen. Dies trifft übrigens auch auf die meisten anderen Block-Typen zu.
-<br/><br/>
-Zum Beispiel hier einen Darstellungsstil für euer Bild einstellen, um diesem zum Beispiel abgerundete Kanten zu geben.
-<br/><br/>
-Der <b>Alt-Text</b> ist eine Option zur Barrierefreiheit. Hiermit kann zum Beispiel das Bild Menschen mit Seheinschränkungen erklärt werden, indem der Computer den Alt-Text vorliest. Auch wird der Text angezeigt, falls es Probleme mit der Bilddatei gibt und diese nicht angezeigt werden kann.
+    Klickt ihr auf euren Bild-Block, ändert sich auch die Seitenleiste rechts. Dort könnt ihr noch einmal spezifische Optionen zu eurem Bild einstellen. Dies trifft übrigens auch auf die meisten anderen Block-Typen zu.
+    <br/><br/>
+    Zum Beispiel hier einen Darstellungsstil für euer Bild einstellen, um diesem zum Beispiel abgerundete Kanten zu geben.
+    <br/><br/>
+    Der <b>Alt-Text</b> ist eine Option zur Barrierefreiheit. Hiermit kann zum Beispiel das Bild Menschen mit Seheinschränkungen erklärt werden, indem der Computer den Alt-Text vorliest. Auch wird der Text angezeigt, falls es Probleme mit der Bilddatei gibt und diese nicht angezeigt werden kann.
 </ImageAside>
+
+### Mediendateien einfügen
+Neben Bildern können auch andere Mediendateien, wie z. B. PDFs und Videos in der Website eingefügt werden. Die Mediendatei ladet ihr dafür am Besten in eurem Dashboard unter „Medien" hoch.
+
+Disclaimer: auch Bilder können über die Mediathek hochgeladen werden und dann im Seiteneditor eingefügt werden.
+
+import Dashboard_Medien from '@site/static/img/guide-pics/Dashboard_Medien.png';
+
+<ImageAside src={Dashboard_Medien} third={true}>
+    Klick' dazu im Dashboard in der Seitenleiste auf „Medien" und anschließend auf „Mediendatei hinzufügen".
+    <br/><br/>
+    Per Drag and Drop oder über eine Auswahl aus dem Dateimanager kann die Mediendatei jetzt hochgeladen werden. Sie erscheint anschließend in der Mediathek.
+</ImageAside>
+
+import Mediendatei from '@site/static/img/guide-pics/Mediendatei.png';
+
+<ImageAside src={Mediendatei} third={true}>
+    <b>Bitte wählt einen Aussagekräftigen Dateinamen für den Upload, um Medien später über die Suchfunktion wieder finden zu können.</b>
+    <br/><br/>
+    Per Klick auf die hochgeladene Datei kann jetzt der Alt-Text festgelegt werden. Gleichzeitig wurde automatisch eine Datei-URL erstellt, mit der die Datei verlinkt werden kann. Dazu wird diese URL (siehe Bild) kopiert.
+    <br/><br/>
+    Gehe nun in den Seiteneditor, wo die Mediendatei angezeigt werden soll. Du kannst sie per Hyperlink mit der kopierten URL zu einem Text hinzufügen, oder im Falle eines PDFs über den Block „Embed PDF.js Viewer" das PDF direkt in die Seite einbetten.
+</ImageAside>
+
+
+
+
 
 ## Seite veröffentlichen
 Um die Änderungen an eurer Seite zu bestätigen und sie zu veröffentlichen, klickt oben rechts auf den blauen Button „Aktualisieren“.
