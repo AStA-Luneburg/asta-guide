@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4cf3a11-4476-4356-ad7e-dfb729392256" name="Changes" comment="How to Mediendateien added">
+      <change afterPath="$PROJECT_DIR$/.idea/asta-guide.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/guide-pics/Dashboard_Medien.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/guide-pics/Dashboard_Medien.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/guide-pics/Mediendatei.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +50,7 @@
       <workItem from="1732868000355" duration="10633000" />
       <workItem from="1732986870927" duration="25000" />
       <workItem from="1744966790469" duration="2430000" />
+      <workItem from="1747743263534" duration="622000" />
     </task>
     <task id="LOCAL-00001" summary="Update Seitenbearbeitung and Beiträge">
       <created>1732887810071</created>
@@ -66,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1744969101586</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="How to Mediendateien added">
+      <created>1747744084120</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747744084120</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
