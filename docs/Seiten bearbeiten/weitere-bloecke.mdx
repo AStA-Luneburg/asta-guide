@@ -1,0 +1,83 @@
+import ImageAside from '@site/src/components/ImageAside';
+
+# Einfügen weiterer Blöcke
+
+Seid ihr im Seiteneditor angekommen, dann steht es euch frei den Inhalt eurer Seite zu gestalten.
+
+Eine Übersicht über Blöcke, die ihr neben Überschirften und Text einfügen könnt, folgt hier.
+
+:::warning Layout Hinweis
+Beim Einfügen von Überschriften, achtet bitte darauf immer H5 als Hauptüberschriften auszuwählen. Bevor ihr eine neue Überschrift beginnt, nutzt zudem eine Trennlinie. Das schafft übersichtliche und einheitliche Seiten, die leichter zu lesen sind.
+:::
+
+## Bilder einbinden
+Da die wohl wichtigste Funktion ist, Bilder in eure Seiten einzufügen, wird diese hier noch einmal genauer erklärt.
+
+Über einen Klick auf das Plus zwischen zwei Blöcken fügt ihr einen neuen Block „Bild“ hinzu. Ihr solltet jetzt folgendes Bild angezeigt bekommen:
+
+![](/img/guide-pics/image13_Bildeinfuegen.png)
+
+Klickt entweder auf „Hochladen“ und wählt ein Bild von eurem Computer aus, welches dann auf den Server hochgeladen wird, oder klickt auf „Mediathek“ und wählt ein Bild aus, welches bereits einmal hochgeladen wurde.
+
+:::caution Wichtig
+Wenn ihr das Bild ausgewählt habt, gebt bei Alternativtext (Alt-Text, mehr dazu auch weiter unten) gerne eine Kurzbeschreibung des Bildes an, sollte es relevant für euren Inhalt sein. Dann können Screenreader für Menschen mit Sehbeeinträchtigungen diesen Alternativtext vorlesen.
+:::
+
+**Das Bild sollte jetzt im Editor angezeigt werden.**
+
+Direkt darüber habt ihr die Möglichkeit, verschiedene Filter oder einen Textumfluss einzustellen, das heißt, dass falls das Bild klein genug ist, Text links oder rechts neben diesem angezeigt werden kann.
+
+import image13 from '@site/static/img/guide-pics/image13.png';
+<ImageAside src={image13}>
+    Die Größe des Bildes kann angepasst werden, indem ihr im Editor an den blauen Punkten rechts und unter dem Bild zieht.
+    <br/><br/>
+    Auch wenn der Block an der falschen Position gelandet ist, kann er über die Pfeile in der Leiste per Klick vor/hinter einen anderen Block gezogen werden, oder durch Drag and Drop über die Schaltfläche mit den sechs Punkten an eine andere Stelle gezogen werden.
+</ImageAside>
+
+Unter dem Bild habt ihr außerdem die Möglichkeit, eine Beschriftung einzugeben, die dann wie im Editor auch auf der Seite angezeigt wird. Praktisch, falls ihr in ein paar Wörtern nochmal auf das Bild eingehen wollt, ohne es in euren eigentlichen Text zu schreiben.
+
+import image14 from '@site/static/img/guide-pics/image14.png';
+
+<ImageAside src={image14} third={true}>
+    Klickt ihr auf euren Bild-Block, ändert sich auch die Seitenleiste rechts. Dort könnt ihr noch einmal spezifische Optionen zu eurem Bild einstellen. Dies trifft übrigens auch auf die meisten anderen Block-Typen zu.
+    <br/><br/>
+    Zum Beispiel hier einen Darstellungsstil für euer Bild einstellen, um diesem zum Beispiel abgerundete Kanten zu geben.
+    <br/><br/>
+    Der <b>Alt-Text</b> ist eine Option zur Barrierefreiheit. Hiermit kann zum Beispiel das Bild Menschen mit Seheinschränkungen erklärt werden, indem der Computer den Alt-Text vorliest. Auch wird der Text angezeigt, falls es Probleme mit der Bilddatei gibt und diese nicht angezeigt werden kann.
+</ImageAside>
+
+## Mediendateien einfügen
+Neben Bildern können auch andere Mediendateien, wie z. B. PDFs und Videos in der Website eingefügt werden. Die Mediendatei ladet ihr dafür am Besten in eurem Dashboard unter „Medien" hoch.
+
+Disclaimer: auch Bilder können über die Mediathek hochgeladen werden und dann im Seiteneditor eingefügt werden.
+
+import Dashboard_Medien from '@site/static/img/guide-pics/Dashboard_Medien.png';
+
+<ImageAside src={Dashboard_Medien} third={true}>
+    Klick' dazu im Dashboard in der Seitenleiste auf „Medien" und anschließend auf „Mediendatei hinzufügen".
+</ImageAside>
+
+Per Drag and Drop oder über eine Auswahl aus dem Dateimanager kann die Mediendatei jetzt hochgeladen werden. Sie erscheint anschließend in der Mediathek.
+
+import Mediendatei from '@site/static/img/guide-pics/Mediendatei.png';
+
+<ImageAside src={Mediendatei} third={true}>
+    <b>Bitte wählt einen Aussagekräftigen Dateinamen für den Upload, um Medien später über die Suchfunktion wieder finden zu können.</b>
+    <br/><br/>
+    Per Klick auf die hochgeladene Datei kann jetzt der Alt-Text festgelegt werden. Gleichzeitig wurde automatisch eine Datei-URL erstellt, mit der die Datei verlinkt werden kann. Dazu wird diese URL (siehe Bild) kopiert.
+</ImageAside>
+
+Gehe nun in den Seiteneditor, wo die Mediendatei angezeigt werden soll. Du kannst sie per Hyperlink mit der kopierten URL zu einem Text hinzufügen, oder im Falle eines PDFs über den Block „Embed PDF.js Viewer" das PDF direkt in die Seite einbetten.
+
+## PDFs direkt in die Seite einbinden
+
+Manchmal kann es auch praktisch sein ein PDF nicht nur in der Seite zu verlinken, sondern es direkt in die Seite einzubetten.
+
+![](/img/guide-pics/Pdf_einbinden.png)
+
+Dazu sollte die Datei bereits in die Mediathek hochgeladen sein. Füge jetzt über den + Button den Block „Embed PDF.js" ein und wähle über den Button „Choose PDF" das PDF, das direkt in die Seite eingebettet werden soll.
+
+
+
+
+ 

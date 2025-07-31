@@ -25,12 +25,9 @@ const sidebars = {
       label: 'Start', // sidebar label
     },
     {
-      type: 'category',
-      label: 'Accounts & Passwörter',
-      items: [
-        'accounts/anmelden', 
-        'accounts/passwort-aendern'
-      ],
+      type: 'doc',
+      id: 'anmelden', // document id
+      label: 'Accounts und Passwörter', // sidebar label
     },
     'beitraege-erstellen',
     {
@@ -39,7 +36,12 @@ const sidebars = {
       items: [
         'Seiten bearbeiten/seiten-bearbeiten', 
         'Seiten bearbeiten/seiten-erstellen',
-        'Seiten bearbeiten/seitenleisten-bearbeiten'
+        'Seiten bearbeiten/seitenleisten-bearbeiten',
+        {
+          type: 'doc',
+          id: 'Seiten bearbeiten/weitere-bloecke',
+          label: 'Einfügen weiterer Blöcke',
+        },
       ],
     },
     {
