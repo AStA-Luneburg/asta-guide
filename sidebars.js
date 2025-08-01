@@ -26,6 +26,11 @@ const sidebars = {
     },
     {
       type: 'doc',
+      id: 'warum-website', // document id
+      label: 'Warum Website?', // sidebar label
+    },
+    {
+      type: 'doc',
       id: 'anmelden', // document id
       label: 'Accounts und Passwörter', // sidebar label
     },
