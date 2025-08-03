@@ -39,14 +39,19 @@ const sidebars = {
       type: 'category',
       label: 'Seiten bearbeiten',
       items: [
-        'Seiten bearbeiten/seiten-bearbeiten', 
+        {
+          type: 'doc',
+          id: 'Seiten bearbeiten/seiten-aufbau',
+          label: 'Seitenaufbau und Layout',
+        },
         'Seiten bearbeiten/seiten-erstellen',
-        'Seiten bearbeiten/seitenleisten-bearbeiten',
+        'Seiten bearbeiten/seiten-bearbeiten', 
         {
           type: 'doc',
           id: 'Seiten bearbeiten/weitere-bloecke',
           label: 'Einfügen weiterer Blöcke',
         },
+        'Seiten bearbeiten/seitenleisten-bearbeiten',
       ],
     },
     {
