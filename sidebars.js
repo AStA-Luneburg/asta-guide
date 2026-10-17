@@ -60,7 +60,11 @@ const sidebars = {
       label: 'Übersetzungen bearbeiten', // sidebar label
     },
     'galerie',
-    'kalender',
+    {
+      type: 'doc',
+      id: 'kalender',
+      label: 'Veranstaltungen',
+    },
     'beschlussdatenbank',
     {
       type: 'category',
