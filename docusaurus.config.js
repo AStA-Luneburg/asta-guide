@@ -8,11 +8,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'AStA Guide',
   tagline: 'Website-Guide für asta-lueneburg.de',
-  url: 'https://guide.asta-lueneburg.de',
+  url: 'https://guide.asta-lg.de',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/asta-mark.svg',
   organizationName: 'asta-luneburg', // Usually your GitHub org/user name.
   projectName: 'asta-guide', // Usually your repo name.
 
