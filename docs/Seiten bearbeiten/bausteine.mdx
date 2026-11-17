@@ -1,0 +1,75 @@
+# Bausteine (Vorlagen)
+
+Für wiederkehrende Layouts gibt es fertige Bausteine. WordPress nennt sie **Vorlagen**
+(englisch: Patterns). Ihr findet sie im Editor über das **+**-Symbol und dort im Reiter
+**Vorlagen**.
+
+![Der Reiter Vorlagen im Block-Inserter mit der Liste der AStA-Vorlagen und ihren Kategorien](/img/guide-gwyneth/muster-inserter.png)
+
+*Der Reiter **Vorlagen**: links die Kategorien, rechts die Bausteine.*
+
+## Welche Bausteine der AStA bereitstellt
+
+Die Namen stehen im Editor auf Englisch — sie sind Teil des Themes und werden nicht
+übersetzt. Die zweite Spalte nennt die Kategorie, unter der der Baustein dort steht.
+
+| Baustein | Kategorie | Wofür | Was ihr anpassen müsst |
+|---|---|---|---|
+| **Hero with CTA buttons** | Handlungsaufforderung | Einstieg mit Hintergrundbild und zwei Aktionen | Bild, Überschrift, Text, beide Linkziele |
+| **News Grid** | Beiträge | Drei aktuelle Beiträge nebeneinander | nichts — zieht automatisch die neuesten Beiträge |
+| **News and Telegram Bento** | Beiträge | Fünf aktuelle Beiträge plus Telegram-Verweis | nur, wenn sich der Telegram-Kanal ändert |
+| **Upcoming Events** | Beiträge | Fünf kommende Termine als Liste mit Datumsplakette | nichts — zieht die Beiträge der Kategorie **Veranstaltungen** |
+| **Event Card** | Beiträge | Eine einzelne Terminzeile | nur innerhalb von *Upcoming Events* sinnvoll |
+| **Referate Grid** | Dienste | Kacheln aller veröffentlichten Referate | nichts — siehe unten |
+| **Referat Card** | Dienste | Eine einzelne Referatskachel | Name, Text, Kontakt, Logo |
+| **Service Icon Grid** | Dienste | Die sechs Schnellzugriff-Kacheln | nichts — die Ziele sind fest hinterlegt |
+| **AStA Contact Card** | Kontakt | Büro-Adresse, Zeiten, E-Mail, Telefon | nur, wenn sich Zeiten oder Kontaktdaten ändern |
+| **Dark Mode Toggle** | Text | Der Schalter zwischen hell und dunkel | nichts |
+| **Social Media (Instagram)** | ohne Gruppe | Überschrift „Social Media“ und der Instagram-Feed | nichts |
+
+:::info Diese Bausteine ziehen ihre Inhalte selbst
+**News Grid**, **News and Telegram Bento** und **Upcoming Events** lesen Beiträge,
+**Referate Grid** liest Seiten. Ihr müsst dort nichts eintragen — aber die Inhalte müssen
+existieren: ein Beitrag mit Kategorie **Veranstaltungen** bzw. eine veröffentlichte
+Referatsseite mit Logo.
+:::
+
+### Referate Grid
+
+Der Baustein liest alle veröffentlichten Seiten unter **AStA Referate**
+(englisch: **AStA Societies**) und zeigt sie als Kacheln. Das Logo der Kachel ist das
+**Beitragsbild** der jeweiligen Referatsseite.
+
+Die Reihenfolge folgt dem Feld **Reihenfolge** in den Seiten-Attributen; ohne Eintrag
+steht dort die alphabetische Reihenfolge nach Titel.
+
+Ein neues Referat erscheint also dann in der Übersicht, wenn
+
+1. die Seite veröffentlicht ist,
+2. sie unter „AStA Referate“ eingeordnet ist, und
+3. ein Beitragsbild (das Logo) gesetzt ist.
+
+![Kacheln der Referate mit Logo, Name und Kontakt](/img/guide-gwyneth/referate-grid.png)
+
+*Das **Referate Grid** auf der Startseite: eine Kachel pro veröffentlichter Referatsseite.*
+
+## Diese Bausteine nicht verwenden
+
+Im Reiter „Vorlagen“ stehen außerdem rund 40 Bausteine des Themes mit englischen Namen wie
+*Site footer: Default*, *Query loop: Default* oder *Sidebar*. Das sind **Bauteile des
+Themes**, aus denen Kopfbereich, Footer und Archivseiten bestehen.
+
+Sie gehören **nicht** in eine Seite. Ein versehentlich eingefügter „Site footer“ steht
+dann mitten im Inhalt.
+
+## Nach dem Einfügen
+
+Ein eingefügter Baustein bringt Beispielinhalte mit, die nicht live gehen dürfen:
+
+- [ ] Platzhaltertexte durch echte Texte ersetzt
+- [ ] Bilder getauscht und mit Alternativtext versehen
+- [ ] Alle Links geprüft und mit sprechendem Linktext versehen
+- [ ] Baustein im Dunkelmodus angesehen
+- [ ] Auf dem Telefon angesehen
+
+Die allgemeine Prüfliste steht unter [Checkliste vor dem Veröffentlichen](../checkliste.mdx).

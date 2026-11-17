@@ -1,83 +1,66 @@
-import ImageAside from '@site/src/components/ImageAside';
-
 # Seiten bearbeiten
 
-Dies ist vermutliche die wichtigste Funktion für alle. Alle Referate, Servicebetriebe und das StuPa besitzen eigene Unterseiten auf der Website, die von euch selbst verwaltet werden können.
+Dies ist die wichtigste Funktion für alle: Jedes Referat, jeder Servicebetrieb und das
+StuPa besitzt eigene Seiten, die ihr selbst pflegt.
 
-## Seitenaufbau
+## In den Editor kommen
 
-Jede Seite besteht aus einem Titel, dem Seiteninhalt und der Seitenleiste rechts.
+**Weg 1 — aus der Seite heraus.** Ihr seid auf der Seite eingeloggt? Dann hat die
+Admin-Leiste oben den Eintrag **Bearbeiten**. Ein Klick öffnet genau diese Seite im
+Editor.
 
+**Weg 2 — aus dem Admin-Bereich.** Links in der Seitenleiste auf **Seiten** klicken, in
+der Liste die Seite suchen und auf **Bearbeiten** klicken.
 
-Der Seiteninhalt kann von euch individuell durch das hinzufügen von Blöcken gestaltet werden. Das geschieht in der Berarbeitungsansicht. Die Basisblöcke sind Überschrift und Text, aber auch Bilder, Formularmasken, PDFs und vieles weitere können den Inhalt einer Seite bilden.
+Beide Wege führen in denselben Block-Editor.
 
+![Seitenliste im Adminbereich mit dem Link Bearbeiten](/img/guide-gwyneth/seiten-liste.png)
 
-:::warning Layout Hinweis
-Beim Einfügen von Überschriften, achtet bitte darauf immer H5 als Hauptüberschriften auszuwählen. Bevor ihr eine neue Überschrift beginnt, nutzt zudem eine Trennlinie. Das schafft übersichtliche und einheitliche Seiten, die leichter zu lesen sind.
-:::
+*Weg 2: In der Seitenliste steht hinter jeder Seite der Link **Bearbeiten**.*
 
-## How to Seiteneditor
-### Möglichkeit 1
+## Der Block-Editor
 
-import image8_neu from '@site/static/img/guide-pics/image8_neu.png';
+Der Editor ist ein Arbeitsbereich aus **Blöcken**. Ein Absatz ist ein Block, eine
+Überschrift ist ein Block, ein Bild ist ein Block, eine Kachelreihe ist eine Gruppe von
+Blöcken.
 
-<ImageAside src={image8_neu}>
-    Geht auf der AStA-Website auf eure Seite, die ihr bearbeiten wollt, und klickt in der Leiste oben auf „Seite bearbeiten“.
-</ImageAside>
+| Was ihr wollt | Wie |
+|---|---|
+| Text schreiben | In den Arbeitsbereich klicken und lostippen |
+| Neuen Block einfügen | **+** zwischen zwei Blöcken, oder oben links der Block-Inserter |
+| Block-Typ schnell finden | `/` tippen und den Namen eingeben, z. B. `/bild` |
+| Block verschieben | Pfeile in der Block-Werkzeugleiste oder am Griff (sechs Punkte) ziehen |
+| Block löschen | Block auswählen, dann `Entf` bzw. im Menü der Werkzeugleiste |
+| Block-Einstellungen | Block auswählen, rechts in der Seitenleiste erscheinen seine Optionen |
+| Letzte Änderung zurücknehmen | `Cmd/Ctrl + Z` |
 
-
-### Möglichkeit 2
-
-import image9 from '@site/static/img/guide-pics/image9.png';
-import image10 from '@site/static/img/guide-pics/image10.png';
-
-<ImageAside src={image9}>
-    Klickt im Adminbereich in der Leiste links auf „Seiten“.
-    Es wird euch eine Übersicht der Seiten angezeigt, die ihr verfasst habt/die ihr verwalten könnt. Im Falle von Referaten sollte das nur jeweils eine sein. Klickt bei dieser dann auf „bearbeiten“.
-</ImageAside>
-<ImageAside src={image10}>
-</ImageAside>
-
-Egal, welchen Weg ihr gewählt habt, solltet ihr nun im Editor landen.
-
-## Der Seiteneditor
-
-![](/img/guide-pics/image11.png)
-
-Im Seiteneditor erstellt ihr eure Seite mit Hilfe der Wordpress Blocks so, wie ihr sie haben wollt. Im großen Feld in der Mitte schreibt ihr den Text für eure Seite. Schreibt ihr einen Absatz, ist das zum Beispiel ein Block. Eine Überschrift wäre auch ein Block. Absätze könnt ihr mit den klassischen Formatierungsoptionen (Fett/Kursiv/Unterstrichen) versehen, ihr könnt Verlinkungen einfügen, etc...
-
-Ein Block kann aber zum Beispiel auch ein Bild sein, welches ihr in euren Beitrag einfügt, oder ein in die Seite eingebettetes YouTube-Video, ein PDF oder ein Formular, das Daten abfragt und sammelt.
-
-:::info
-Das Meiste der Funktionen sollte selbsterklärend sein, spielt also gerne einfach ein wenig rum. Bei Fragen, wie spezifische Vorstellungen von euch umgesetzt werden können, oder wenn ihr Hilfe braucht, meldet euch jederzeit gerne an den/die Webmaster*in (webmaster@asta-lueneburg.de).
-:::
-
-### Einen Block einfügen
-
-import image12 from '@site/static/img/guide-pics/image12.png';
-import image12_Blocki from '@site/static/img/guide-pics/image12_BlockInserter.png';
-
-<ImageAside src={image12}>
-	Ihr fügt einen Block ein, in dem ihr oberhalb eines bereits existierenden Blockes (oder ganz am Ende der Seite) auf das erscheinende „+“ klickt. Daraufhin könnt ihr den Block-Typ auswählen.
-    <br/><br/>
-   
-</ImageAside>
-
-<ImageAside src={image12_Blocki}>
-     Über einen Klick oben links in der Kopfzeile könnt ihr auch den Block-Inserter ausklappen und damit arbeiten. 
-</ImageAside>
-
-Neben Überschriften und Text gibt es eine Vielzahl weitere Blöcke. Eine Erklärung zu einigen findest du [hier](https://guide.asta-lg.de/docs/Seiten%20bearbeiten/weitere-bloecke).
-
+Für wiederkehrende Layouts müsst ihr keine Blöcke zusammensetzen: Es gibt fertige
+**Bausteine**. Siehe [Bausteine](./bausteine.mdx).
 
 ## Seite veröffentlichen
-Um die Änderungen an eurer Seite zu bestätigen und sie zu veröffentlichen, klickt oben rechts auf den blauen Button „Aktualisieren“.
 
-:::caution Achtung
-Bevor ihr die Seite veröffentlicht/aktualisiert, klickt einmal auf „Vorschau“ und überprüft, dass eure Änderungen zu keinem unerwünschten Effekt geführt haben und alles auch wirklich so aussieht, wie ihr es möchtet. Denkt dran, dass sobald ihr die Seite aktualisiert, jede\*r, die\*der AStA-Website besucht, diese Änderungen sehen kann.
+Oben rechts auf **Aktualisieren** klicken. Der Button **Vorschau** zeigt die Seite, bevor
+sie für alle sichtbar ist.
+
+:::caution Vor dem Aktualisieren
+Klickt einmal auf **Vorschau** und prüft, ob die Änderung das gewollte Ergebnis hat.
+Sobald ihr aktualisiert, sieht die Änderung jede und jeder Besuchende der Website.
 :::
 
-:::warning Achtung
-Klickt auf keinen Fall auf „Auf Entwurf umstellen“. Damit wird die Veröffentlichung eurer Seite Rückgängig gemacht, was bedeutet, dass jede\*r Besucher\*in der Seite eine Fehlermeldung erhält.
+:::warning Nicht auf Entwurf umstellen
+Der Menüpunkt **Auf Entwurf umstellen** nimmt die Seite aus der Öffentlichkeit. Wer die
+URL aufruft, bekommt dann keine Inhalte mehr. Wenn eine Seite vorübergehend weg soll,
+sprecht das mit der Webmaster-Stelle ab.
 :::
 
+## Ältere Fassungen wiederherstellen
+
+WordPress speichert bei jedem Aktualisieren eine Revision. Rechts in der Seitenleiste im
+Reiter „Seite“ findet ihr unter **Revisionen** die Liste der Fassungen; ein Klick zeigt
+den Unterschied, eine Schaltfläche stellt die Fassung wieder her.
+
+## Zwei Dinge, die überraschen
+
+- **Der Titel ist die H1 der Seite.** Schreibt ihn nicht zusätzlich in den Inhalt.
+- **Ein neuer Titel ändert die URL nicht.** Die URL bleibt beim Anlegen stehen. Ist eine
+  neue URL gewünscht, ist das ein Fall für die Webmaster-Stelle (Weiterleitung).

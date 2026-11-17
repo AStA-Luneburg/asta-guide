@@ -1,0 +1,90 @@
+# Menü und Mega-Menü
+
+Das Hauptmenü ist kein Linkbaum, sondern ein **Mega-Menü** mit **fünf Panels**. Jedes
+Panel öffnet sich als Fläche mit Gruppen, Untertiteln und einer eigenen Aktion.
+
+## Die fünf Panels
+
+| Panel | Gruppen | Beispiele |
+|---|---|---|
+| **Services** | Semesterticket · Beratung & Hilfe · Verleih & Räume | Semesterticket-Rückerstattung, Awareness, Kinderbetreuung, Technikverleih |
+| **AStA** | Über uns · Jobs · Referate | Sprecher*innen, Büroteam, Finanzreferat, Satzung, Referate-Übersicht |
+| **Aktuelles** | *(keine Gruppen — eine Liste)* | Alle Aushänge, Veranstaltungen, Sommer Open Air, Coraci-Festival |
+| **How to Study?** | Studium · Autonome Lehre · Wohnen | Studi-Guide, Prüfungen, Stipendien, Wohnungsausschreibungen, Bettenbörse |
+| **StuPa** | StuPa · Anträge & Beschlüsse · Wahlen | Sitzungen, Ausschüsse, Beschlussdatenbank, Wahlergebnisse |
+
+:::info Wo „Wohnen“ liegt
+Obwohl das Panel **Wohnen** früher eigenständig war, stecken die Wohn-Seiten heute als
+dritte Gruppe im Panel **How to Study?**. Wer einen Wohn-Link sucht, findet ihn dort.
+:::
+
+## Aktionen am Ende eines Panels
+
+Einige Panels enden mit einer hervorgehobenen Aktion:
+
+| Panel | Aktion | Ziel |
+|---|---|---|
+| Services | „Alle Services“ | `/service/` |
+| Aktuelles | „Beitrag einreichen“ | Formular zum Einreichen |
+| StuPa | „Mehr zum StuPa“ | `/stupa/` |
+
+Dazu kommen „Alle …“-Links innerhalb der Gruppen, zum Beispiel **Alle Referate** hinter der
+Gruppe *Referate*, **Alle Beschlüsse** hinter *Anträge & Beschlüsse* und **Alle Aushänge**
+im Panel *Aktuelles*.
+
+Die Aktionen sind technisch zweierlei: Die „Alle …“-Links sind **Menüeinträge** mit der
+CSS-Klasse `asta-cta-link`, die beiden Panel-Aktionen dagegen **CTA-Links von Max Mega
+Menu**. Beides setzt die Webmaster-Stelle; im Block-Editor ist es nicht zu sehen.
+
+![Geöffnetes Services-Panel im Mega-Menü mit Gruppen, Untertiteln und der Aktion Alle Services](/img/guide-gwyneth/mega-menu-services.png)
+
+*Das Panel **Services**: Gruppen mit Titel und Untertitel, unten die Aktion „Alle Services“.*
+
+Jeder Eintrag im Panel hat einen **Titel** und eine **kurze Beschreibung**. Die
+Beschreibung ist der Text, der im Panel unter dem Titel steht; sie kommt aus dem Feld
+„Beschreibung“ des Menüeintrags (in den Menü-Einstellungen über *Ansicht anpassen*
+einblendbar).
+
+## Wer was ändert
+
+| Änderung | Zuständig |
+|---|---|
+| Einen Link hinzufügen, umbenennen oder verschieben | Ihr, über **Design → Menüs** |
+| Panel-Aufteilung, Spalten, Icons, Aktionstext | Webmaster-Stelle über **Max Mega Menu** |
+| Neues Panel | Webmaster-Stelle, nach Absprache |
+
+Die Einstellungen von Max Mega Menu sind mächtig und wirken auf jeder Seite. Sie werden
+nicht im Block-Editor gepflegt, sondern auf der eigenen Admin-Seite des Plugins.
+
+## Einen Link hinzufügen
+
+1. **Design → Menüs**.
+2. Menü **Hauptmenü (Top)** wählen.
+3. Seite oder eigenen Link hinzufügen, in die Struktur an die richtige Stelle ziehen,
+   **Beschreibung** ausfüllen.
+4. **Menü speichern**.
+5. Denselben Eintrag im Menü **Hauptmenü (Top) - Englisch** anlegen. Fehlt er dort, fehlt
+   er auf der englischen Website.
+
+![Menü-Verwaltung mit der Menüstruktur links und den Einstellungen je Eintrag](/img/guide-gwyneth/menues.png)
+
+***Design → Menüs**: links die verfügbaren Einträge, rechts die Struktur des gewählten Menüs.*
+
+:::info Zwei Menüs, zwei Footer
+Neben den beiden Hauptmenüs gibt es **Footer-Menü-de** und **Footer Menu (EN)**. Auch sie
+werden getrennt gepflegt.
+:::
+
+## Reihenfolge
+
+Die Reihenfolge im Menü ist die Reihenfolge der Einträge in der Menü-Struktur — nicht das
+Alphabet. Ziehen ändert sie sofort nach dem Speichern.
+
+![Geöffnetes StuPa-Panel im Mega-Menü mit Gruppen zu Anträgen, Beschlüssen und Wahlen](/img/guide-gwyneth/mega-menu-stupa.png)
+
+*Das Panel **StuPa** mit seinen Gruppen und der Aktion „Mehr zum StuPa“.*
+
+:::warning Achtung
+Menüpunkte sind Navigation, nicht Inhalt. Wer die Struktur umbaut, ändert für alle
+Besuchenden den Weg durch die Website. Sprecht größere Umbauten vorher ab.
+:::

@@ -27,6 +27,19 @@ $ npm start
 
 Nun kannst du Änderungen vornehmen, die automatisch in der Vorschau aktualisiert werden.
 
+## Screenshots
+
+Die Bilder der Anleitung liegen in `static/img/guide-gwyneth/`. Sie zeigen die echte
+Website (`asta-lueneburg.de`) bzw. deren lokalen Zwilling `dev-asta-gwyneth.local` —
+keine Mockups. Beim Erneuern gilt:
+
+- auf einer Gwyneth-Installation aufnehmen, nicht auf der Vorgänger-Website;
+- deutsche Oberfläche (Admin-Sprache `de_DE`), damit die Bezeichnungen zu den Texten passen
+  — das Excerpt-Feld heißt dort **Textauszug**, der Muster-Reiter **Vorlagen**;
+- für Screenshots im Adminbereich ein temporäres Konto mit Administrator-Rechten anlegen
+  und es nach dem Shooting wieder löschen;
+- jedes Bild braucht einen Alternativtext; die Anleitung erklärt selbst, warum.
+
 ## Änderungen veröffentlichen
 
 Um deine Änderungen zu veröffentlichen, musst du sie nur per Git in diese Repository pushen.

@@ -1,48 +1,68 @@
 # Galerie
 
-Alle Referate (und manche Servicebetriebe) haben Zugriff auf eine eigene Galerie, die in Seiten und Beiträge eingefügt werden kann.
+Bilder und Dateien für die Website: hochladen, beschreiben, austauschen und als Galerie
+auf einer Seite zeigen.
 
-Um Bilder zu dieser Galerie hinzuzufügen, klickt in der Seitenleiste des Administrationsbereiches auf *Galerie/Bilder hinzufügen* unter *Galerie*. Es öffnet sich die Seite zum Hochladen von Bildern.
+Alle Bilder und Dateien liegen zentral in der **Mediathek**. Von dort werden sie in Seiten
+und Beiträge eingebunden, und von dort kommen auch die Logos in den Referate-Kacheln.
 
-![](/img/guide-pics/image31.png)
+> **Geändert mit dem Relaunch:** Die frühere Anleitung beschrieb das Plugin *NextGEN
+> Gallery*. Es ist nicht mehr installiert. Galerien entstehen heute mit dem normalen
+> Galerie-Block.
 
-**Wählt unter *Galerie* den Namen eurer Organisation aus. Normalerweise sollte im Auswahlmenü auch nur diese auftauchen.**
+## Bilder hochladen
 
-:::caution Achtung
-Solltet ihr aus irgendeinem Grund keine Galerie auswählen können, kontaktiert bitte den/die Webmaster*in (webmaster@asta-lueneburg.de) und erstellt keine neue Galerie.
+1. **Medien → Mediendatei hinzufügen** (oder im Editor im Bild-Block **Hochladen**).
+2. Datei auswählen, Upload abwarten.
+3. Bild anklicken und rechts die **Anhang-Details** ausfüllen.
+
+![Mediathek in der Rasteransicht mit den hochgeladenen Bildern](/img/guide-gwyneth/mediathek.png)
+
+*Die Mediathek: hier liegen alle Bilder, hier werden sie gesucht und ersetzt.*
+
+| Feld | Regel |
+|---|---|
+| **Dateiname** | beschreibend, klein, mit Bindestrichen: `referat-archipel-logo.jpg`, nicht `IMG_2481.jpg`. Der Dateiname wird Teil der Bild-URL |
+| **Alternativtext** | beschreibt, was zu sehen ist — Pflicht, siehe [Bildbeschreibungen](./barrierefreiheit/bilder-alt-texte.mdx) |
+| **Beschriftung** | optional, erscheint als Bildunterschrift |
+| **Größe** | Fotos vor dem Upload auf höchstens 2000 px lange Kante verkleinern; die Website skaliert selbst, lädt aber das Original |
+| **Format** | JPEG für Fotos, PNG für Grafiken mit Transparenz, SVG nur für Logos |
+
+![Anhang-Details eines Bildes mit dem Feld Alternativer Text](/img/guide-gwyneth/anhang-alt-text.png)
+
+*Die **Anhang-Details** eines Bildes. In das Feld *Alternativer Text* kommt die Bildbeschreibung.*
+
+## Ein Bild austauschen
+
+Ein Bild wird über **Medien** geöffnet und dort über **Datei ersetzen** ausgetauscht. Die
+Datei-URL bleibt dabei gleich, sodass alle Stellen, die das Bild schon verwenden, das
+neue Bild zeigen.
+
+Das ist der richtige Weg für „das Logo hat sich geändert“ und für veraltete Fotos. Ein neu
+hochgeladenes Bild würde an jeder Einbaustelle einzeln ersetzt werden müssen.
+
+## Referats-Logos
+
+Das Logo eines Referats ist das **Beitragsbild** der Referatsseite. Der Baustein
+**Referate Grid** holt es von dort und zeigt es in der Kachel.
+
+Wo das Logo gesetzt wird: Referatsseite öffnen → rechte Seitenleiste, Reiter „Seite“ →
+**Beitragsbild festlegen**.
+
+## Eine Galerie auf einer Seite
+
+Für mehrere Bilder auf einer Seite gibt es den Block **Galerie**:
+
+1. Block **Galerie** einfügen.
+2. Bilder aus der Mediathek auswählen oder hochladen.
+3. In der rechten Seitenleiste die Darstellung wählen (z. B. Spalten oder Mosaik) und die
+   Anzahl der Spalten einstellen.
+
+Für jedes Bild gilt weiterhin: Alternativtext ausfüllen. Er lässt sich direkt im
+Galerie-Block pro Bild setzen.
+
+:::info Wo sind die alten Galerien?
+Die mit NextGEN angelegten Galerien werden nicht mehr ausgeliefert. Wenn auf einer Seite
+noch eine Galerie fehlt, die früher dort stand, meldet euch bei der Webmaster-Stelle — die
+Bilder liegen weiterhin in der Mediathek.
 :::
-
-Klickt anschließend auf *Dateien hinzufügen* und wählt Dateien von eurem Computer aus, die ihr in eure Galerie hochladen wollt. Habt ihr alle hinzugefügt, klickt auf *Upload beginnen*. Die Dateien werden nun hochgeladen. Sobald der Upload beendet wurde, solltet ihr eine Meldung erhalten und hinter jedem Bild sollte ein grüner Haken erscheinen. Bitte verlasst die Seite erst dann, da es sonst sein kann, dass nicht alle Bilder erfolgreich hochgeladen wurden.
-
-## Bilder verwalten
-
-Damit ihr die Informationen zu den gerade hochgeladenen Bildern bearbeiten könnt oder unerwünschte Bilder löschen könnt, klickt auf *Galerien verwalten* unter *Galerie* in der Seitenleiste. Ihr erhaltet nun eine Übersicht aller Galerien, wobei alle ausgegraut sein sollten außer eure eigene. Klickt ihr hier auf den Titel eurer Galerie, gelangt ihr zu der Seite, wo ihr eure Bilder verwalten könnt.
-
-![](/img/guide-pics/image32.png)
-
-Hier habt ihr eine Vielzahl an Möglichkeiten, um eure Bilder zu bearbeiten und dessen Informationen zu ändern. So könnt ihr zum Beispiel den Titel und eine Beschreibung eingeben, die später in eurer Galerie angezeigt wird. Möchtet ihr ein Bild aus der Galerie entfernen, klickt unter dem Bild auf *Löschen*.
-
-![](/img/guide-pics/image33.png)
-
-Ihr müsst eure Änderungen speichern, indem ihr entweder oben oder ganz unten auf der Seite auf *Änderungen speichern* klickt.
-
-![](/img/guide-pics/image34.png)
-
-## Galerie einem Beitrag/einer Seite hinzufügen
-Damit die Galerie auf der Website angezeigt wird, muss sie einer Seite oder einem Beitrag hinzugefügt werden. Bearbeitet dafür eine Seite oder einen Beitrag, sodass ihr im Editor landet.
-
-Fügt anschließend den Block *NextGEN Gallery* hinzu und klickt auf den großen Button *Add NextGEN Gallery*.
-
-Es öffnet sich ein Fenster, in dem ihr eure Galerie hinzufügen könnt.
-
-![](/img/guide-pics/image35.png)
-
-Klickt ihr auf „Select a Gallery“ öffnet sich eine Auswahl mit den verfügbaren Galerien. Wählt hier die, die ihr einfügen wollt (in den meisten Fällen vermutlich eure eigene). Darunter habt ihr die Möglichkeit, verschiedene Darstellungsweisen für die Galerie auszuwählen. Die Bilder dort erklären eigentlich ganz gut, wie die verschiedenen Optionen aussehen.
-
-:::info
-Die Darstellungsweise „Basic TagCloud“ funktioniert nur, wenn ihr für eure Bilder Stichwörter eingetragen habt (siehe „Bilder verwalten“).
-:::
-
-Für eine bessere Benutzerfreundlichkeit wechselt vor dem Einfügen noch einmal kurz auf den Reiter „Customize Display Settings“ und setzt die Option „Aktiviere AJAX-Naviagtion“ auf „Ja“. Damit können Besucher*innen zwischen den einzelnen Seiten eurer Galerie navigieren, ohne dass die Seite neu geladen wird. Ihr könnt dort außerdem auch einstellen, wie viele Bilder pro Seite angezeigt werden sollen.
-
-Seid ihr fertig, klickt ihr unten auf „Insert Gallery“. Die Galerie ist damit im Beitrag eingefügt, sie wird im Editor allerdings nicht wirklich angezeigt. Anschließend müsst ihr eure Seite/euren Beitrag aktualisieren. Damit wird die Galerie dort angezeigt.

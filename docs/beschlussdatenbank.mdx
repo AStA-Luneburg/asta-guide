@@ -1,19 +1,57 @@
 # StuPa Beschlussdatenbank
 
-## How to
-Die Beschlussdatenbank findet ihr in der Leiste im Admin-Bereich auf der linken Seite unter „Beschlüsse“. Auf der Übersichtsseite seht ihr die bisher eingetragenen Beschlüsse und könnt diese nach verschiedenen Parametern sortieren, nach Beschlüssen suchen und diese bearbeiten oder löschen.
+Die Beschlussdatenbank ist eine eigene Anwendung innerhalb des WordPress-Adminbereichs.
+Öffentlich steht sie auf der Seite
+[Beschlussdatenbank](https://asta-lueneburg.de/stupa/beschluesse/beschlussdatenbank/)
+(englisch: [Resolution Database](https://asta-lueneburg.de/en/stupa/resolutions/resolution-database/)).
 
-## Beschluss hinzufügen
-Möchtet ihr einen neuen Beschluss hinzufügen, klickt auf den Button „Beschluss hinzufügen“ und füllt die erforderlichen Felder aus. Für den Beschlusstext habt ihr die Möglichkeit, den Text mit grundlegenden Optionen zu formatieren und Bilder einzufügen.
+:::info Zugang
+Die Datenbank ist **passwortgeschützt**. Das Passwort wird getrennt von den
+WordPress-Accounts verwaltet; es wird zu Beginn jeder Legislaturperiode neu beschlossen
+und dann der Webmaster-Stelle mitgeteilt.
+:::
 
-Um Fehlern vorzubeugen, bitte fügt Beschlusstext und -begründung immer über den „Code" Tab der Textfelder ein (siehe Bild) und bearbeitet eventuelles Layout des Textes anschließend, indem ihr auf den Tab „Visuell" klickt. 
+## Im Admin-Bereich
 
-![](/img/guide-pics/Beschlussdatenbank.png)
+Das Menü **Beschlüsse** in der linken Leiste hat drei Einträge:
 
-## Beschlussdatenbank in Website einfügen
+| Eintrag | Zweck |
+|---|---|
+| **Beschlüsse anzeigen** | Liste aller Einträge, Suche, Bearbeiten und Löschen |
+| **Beschluss hinzufügen** | Neuen Beschluss erfassen |
+| **Einstellungen** | Auswahlfelder, Sortierung und die Spalten der öffentlichen Tabelle |
 
-Ihr könnt die Beschlussdatenbank zu einer Seite auf der Website hinzufügen, indem ihr den Block „Shortcode“ nutzt und dort `[beschlussdatenbank]` einfügt. Über den Menüpunkt „Einstellungen“ kann außerdem konfiguriert werden, welche Beschlussorgane und Antragssteller*innen zur Auswahl stehen sollen, und welche Elemente der Beschlüsse in der öffentlichen Tabelle angezeigt werden sollen, sowie wie diese standardmäßig sortiert sein soll.
+## Einen Beschluss anlegen
 
-## Beschlussdatenbank Passwort ändern
+1. **Beschlüsse → Beschluss hinzufügen**.
+2. Felder ausfüllen: Sitzungsdatum, Gremium, Antragsteller*in, Titel, Beschlusstext,
+   Begründung, Ergebnis, Ablaufdatum und Stichworte.
+3. **Speichern**.
 
-Das Passwort der Beschlussdatenbank sollte ebenfalls mit jeder neuen StuPa Legislaturperiode geändert werden. Dazu muss im StuPa ein neues Passwort beschlossen werden. Das neue Passwort wird dann dem/der Webmaster*in mitgeteilt und angepasst.
+![Formular Beschluss hinzufügen mit Sitzungsdatum, Gremium, Titel, Beschlusstext und Begründung](/img/guide-gwyneth/beschluss-hinzufuegen.png)
+
+***Beschlüsse → Beschluss hinzufügen**: alle Felder eines Beschlusses auf einer Seite.*
+
+Für Beschlusstext und Begründung gibt es einen Editor mit den Reitern **Visuell** und
+**Code**. Text, der aus einer Sitzungsvorlage kommt, am besten über den Reiter **Code**
+einfügen und die Formatierung danach im Reiter **Visuell** prüfen — so kommen keine
+unsichtbaren Formatierungen aus Word mit.
+
+:::caution Wichtig
+Ein Beschluss ist ein Dokument, kein Beitrag. Das Sitzungsdatum bestimmt die Sortierung
+der öffentlichen Liste — prüft es vor dem Speichern.
+:::
+
+## Einstellungen
+
+Unter **Beschlüsse → Einstellungen** legt ihr fest,
+
+- welche **Gremien** und **Antragsteller*innen** in den Auswahlfeldern stehen,
+- welche **Spalten** die öffentliche Tabelle zeigt (eine Zeile pro Auswahl),
+- wie die Tabelle standardmäßig sortiert ist.
+
+![Einstellungen der Beschlussdatenbank mit Auswahlfeldern und den Spalten der öffentlichen Tabelle](/img/guide-gwyneth/beschluss-einstellungen.png)
+
+*Die Einstellungen: Auswahlfelder, Spalten der öffentlichen Tabelle und Voreinstellung der Sortierung.*
+
+Diese Einstellungen gelten für alle Beschlüsse. Änderungen daran wirken sofort öffentlich.

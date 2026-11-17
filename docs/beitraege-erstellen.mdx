@@ -1,80 +1,141 @@
 ---
 sidebar_position: 2
 ---
+
 import ImageAside from '@site/src/components/ImageAside';
 
 
 # Beiträge erstellen
 
-Ihr habt Neuigkeiten aus euren Referaten, Servicebetrieben oder dem StuPa, die ihr veröffentlichen wollt? Perfekt! Alle haben die Möglichkeit (und die wird euch ans Herz gelegt!), sogenannte Beiträge zu veröffentlichen. Die werden dann unter „Aktuelles“ veröffentlicht und sollen so über AStA/StuPa Arbeit informieren.
+Ihr habt Neuigkeiten aus eurem Referat, Servicebetrieb oder dem StuPa? Alle mit einem
+Account können **Beiträge** veröffentlichen. Sie erscheinen unter „Aktuelles“, auf der
+Startseite und in den Übersichten.
 
-:::info
-Ein Beitrag ist nicht das Gleiche wie eine Seite! Stellt euch einen Beitrag vor wie einen Blogpost, der in Kategorien unter Aktuelles auf der Webiste veröffentlicht wird, während eure Seite der Ort ist, an dem langfristige Informationen ihren Platz finden.
+:::info Beitrag oder Seite?
+Ein Beitrag ist ein Blogpost: datiert, kategorisiert, erscheint in Listen und verschwindet
+mit der Zeit nach unten. Eine Seite ist der dauerhafte Ort für langfristige Informationen
+und steht im Menü. Wenn ihr unsicher seid: Beitrag für Neuigkeiten, Seite für alles, was
+auch in einem halben Jahr noch stimmen soll.
 :::
 
-## How to
+## Vier Bestandteile
 
-import image29_neu from '@site/static/img/guide-pics/image29_neu.png';
+Ein Beitrag besteht aus **Titel**, **Textauszug**, **Beitragsbild** und **Inhalt**.
 
-<ImageAside src={image29_neu} third={true}>
-    Um einen Beitrag zu erstellen, klickt ganz einfach in der Leiste oben auf der AStA Website auf „Beitrag“ unter „Neu“. Es öffnet sich derselbe Editor wie zum Bearbeiten/Erstellen von Seiten. Hier stehen euch alle Blöcke zur Verfügung, um den Beitrag zu schreiben und aufzuhübschen.
+![Block-Editor eines neuen Beitrags mit Titelfeld, Inhaltsbereich und rechter Seitenleiste](/img/guide-gwyneth/beitrag-editor.png)
+
+*Der Beitrags-Editor: links der Inhalt, rechts alles, was zum Beitrag gehört.*
+
+### 1. Titel
+
+Konkret, ohne Clickbait. Der Titel ist die Überschrift des Beitrags, erscheint in den
+Übersichten und im Browser-Tab.
+
+Ändert ihr später den Titel, ändert sich die URL nicht automatisch mit.
+
+### 2. Textauszug
+
+Der Textauszug ist **keine Nebensache**: Das Theme nutzt ihn als `meta description` für
+Suchmaschinen und als Text in Social-Media-Vorschauen. Dort steht er im Editor in der
+rechten Seitenleiste im Reiter „Beitrag“ unter **Textauszug**; er ist anfangs zugeklappt
+und heißt dort „Textauszug hinzufügen …“.
+
+- zwei bis drei Sätze, **120 bis 155 Zeichen**
+- klingt wie ein Satz, nicht wie eine Stichwortliste
+- fasst zusammen, worum es geht — nicht „hier mehr lesen“
+
+<ImageAside src="/img/guide-gwyneth/editor-seitenleiste.png" third alt="Rechte Seitenleiste im Reiter Beitrag mit Beitragsbild, Textauszug, Status und Kategorien">
+Ganz oben steht <strong>Beitragsbild festlegen</strong>, darunter der Link <strong>Textauszug
+hinzufügen …</strong>. Ein Klick darauf öffnet das Feld.
 </ImageAside>
 
-![](/img/guide-pics/image29_neuerBeitrag.png)
-
 :::caution Wichtig
-Bitte achtet darauf, dass ihr als Unterüberschriften im Text immer nur Header 4 (H4) verwendet und davor einen Abstandshalter mit 40 px Höhe packt.
+Ist der Textauszug leer, verwendet das Theme den **ersten Absatz** des Beitrags. Gibt es auch
+den nicht, steht in der Suchmaschine nur ein allgemeiner Satz mit dem Titel. Ein
+geschriebener Textauszug ist immer die bessere Lösung.
 :::
 
-** Vor dem Veröffentlichen müssen allerdings noch ein paar Einstellungen getätigt werden.**
+### 3. Beitragsbild
 
-:::info
-Vor der Veröffentlichung könnt ihr immer die Vorschaufunktion nutzen, um eventuelle Fehler zu korrigieren, bevor die Öffentlichkeit Zugriff auf den Beitrag erhält.
-:::
+Das Bild, das in Karten, Listen und Vorschauen gezeigt wird. Rechts in der Seitenleiste
+im Reiter „Beitrag“ auf **Beitragsbild festlegen** klicken und ein Bild aus der Mediathek
+wählen oder neu hochladen.
+
+- Ohne Beitragsbild bleibt die Bildfläche in der Kachel leer.
+- Beim Hochladen **Alternativtext** setzen (siehe
+  [Bildbeschreibungen](./barrierefreiheit/bilder-alt-texte.mdx)).
+- Für Social-Media-Vorschauen gilt: das Beitragsbild ist das Vorschaubild.
+
+![Dialog zur Auswahl des Beitragsbilds aus der Mediathek](/img/guide-gwyneth/beitragsbild.png)
+
+*„Beitragsbild festlegen“ öffnet die Mediathek; oben ein neues Bild hochladen, unten eines auswählen.*
+
+### 4. Inhalt
+
+Der eigentliche Text, gebaut aus Blöcken. Es gelten dieselben Regeln wie auf Seiten:
+Überschriften im Inhalt ab **H2**, keine manuell gesetzten Schriftgrößen oder Farben.
+Mehr dazu unter [Seitenaufbau](./Seiten bearbeiten/seiten-aufbau.mdx).
 
 ## Kategorie
 
-Euer Beitrag muss einer Kategorie zugeordnet werden, in den allermeisten Fällen der Kategorie eurer Organisation. In der rechten Seitenleiste im Tab „Beitrag“ könnt ihr „Kategorie“ ausklappen (siehe im Bild oben). Dort wählt ihr die passende(n) Kategorien aus.
+Jeder Beitrag gehört in **eine** Kategorie. Die Kategorie bestimmt, wo der Beitrag
+erscheint:
 
+| Kategorie | Erscheint unter |
+|---|---|
+| **Aktuelles → AStA News** | `/news/aktuelles/asta-news/` |
+| **Aktuelles → Veranstaltungen** | `/news/aktuelles/veranstaltungen/` |
+| **Aktuelles → Newsletter** | `/news/aktuelles/newsletter/` |
+| **Aktuelles → Jobs (extern)** | `/news/aktuelles/jobs-extern/` |
+| **Aktuelles → Sonstiges** | `/news/aktuelles/sonstiges/` |
+| **Jobs (AStA)** | `/news/jobs/` |
+| **StuPa** | `/news/stupa/` |
+| **Referate** | `/news/referate/` |
+| **Wohnen** | `/news/wohnen/` |
 
-:::info
-Aktuell haben nicht alle Servicebetriebe eine Kategorie. Möchtet ihr einen Beitrag
-posten, findet aber eure Kategorie nicht, kontaktiert bitte erst den/die Webmaster*in (webmaster@asta-lueneburg.de) und wählt keine andere Kategorie aus. Dann schauen wir gemeinsam, wie wir das gut lösen.
-:::
+Die Kategorie wählt ihr rechts in der Seitenleiste im Reiter „Beitrag“ unter
+**Kategorien**.
 
-
-:::caution Wichtig
-In fast allen Fällen sollte der Haken für die Kategorie „Allgemein“ herausgenommen werden, um so eine bessere Übersichtlichkeit bei der Sortierung von Beiträgen zu erreichen.
-:::
-
-## Beitragsbild
-
-Im besten Fall versorgt ihr euren Beitrag mit einem (aussagekräftigen) Beitragsbild. Dazu in der rechten Seitenleiste im Tab „Beitrag“ ganz oben auf „Beitragsbild festlegen“ klicken. Es öffnet sich ein Fenster, in dem ihr ein Bild hochladen könnt, oder ihr wählt eines aus der Mediathek aus.
-
-![](/img/guide-pics/image29_Beitragsbild.png)
-
-:::caution Wichtig
-Wenn ihr das Bild ausgewählt habt, gebt bei Alternativtext gerne eine Kurzbeschreibung des Bildes an, sollte es relevant für euren Inhalt sein. Dann können Screenreader für Menschen mit Sehbeeinträchtigungen diesen Alternativtext vorlesen.
-:::
-
-## Seitenleiste
-
-import image21 from '@site/static/img/guide-pics/image21.png';
-
-<ImageAside src={image21} third={true}>
-Abschließend solltet ihr noch einstellen, dass eure Seitenleiste neben eurem Beitrag angezeigt wird, damit sich interessierte Besucher*innen gleich an euch wenden können und wissen, von wem der Beitrag kommt. Öffnet hierfür den Reiter „Sidebars“. Hier habt ihr jetzt viele Optionen, die ihr aber alle ignorieren solltet, bis auf die Auswahlbox, die mit „Haupt“ beschriftet ist. In dieser wählt ihr den Namen eurer Organisation aus, falls vorhanden. Andernfalls wird die Seitenleiste des AStA-Büroteams angezeigt.
+<ImageAside src="/img/guide-gwyneth/kategorien.png" third alt="Kategorien-Bereich in der Seitenleiste mit der Kategorie-Baumstruktur">
+Die Kategorien stehen als Baum in der Seitenleiste: Oberkategorie <strong>Aktuelles</strong>,
+darunter die Unterkategorien. Eine Zeile anhaken, nicht mehrere.
 </ImageAside>
 
-## Beitrag veröffentlichen
+:::caution Wichtig
+- **Eine** Kategorie reicht. Mehrere Kategorien erzeugen doppelte Einträge in den
+  Übersichten.
+- **„Unkategorisiert“ nie wählen.** Diese Kategorie muss leer bleiben.
+- Fehlt eure Kategorie, wählt keine fremde, sondern fragt die Webmaster-Stelle.
+:::
 
-Nachdem ihr diese ganzen Einstellungen erledigt habt, könnt ihr euren Beitrag nun veröffentlichen. Klickt dafür auf den blauen Button „Veröffentlichen“ oben rechts. 
+## Keine Seitenleiste mehr
 
-import image30_v from '@site/static/img/guide-pics/image30_veroeffentlichen.png';
+Der frühere Reiter „Sidebars“ und die Auswahl einer Organisations-Seitenleiste sind mit
+dem Relaunch **entfallen**. Beiträge werden vollbreit dargestellt; die Angabe, von wem
+der Beitrag stammt, macht ihr im Text oder über den Autor bzw. die Autorin des Accounts.
 
-<ImageAside src={image30_v} third={true}>
-Ihr habt die Möglichkeit, einen Beitrag zu einem späteren Zeitpunkt zu veröffentlichen, als ihr ihn schreibt. Klickt dafür in der rechten Seitenleiste unter „Status und Sichtbarkeit“ auf das Datum neben „Veröffentlichen“. Ihr könnt nun ein Datum und eine exakte Uhrzeit einstellen, an dem euer Beitrag automatisch vom System veröffentlich wird.
-    Versichert euch vor dem Veröffentlichen gerne nochmal über die Vorschaufunktion, dass sich keine Fehler eingeschlichen haben.
-</ImageAside>
+## Veröffentlichen
 
+Rechts oben auf **Veröffentlichen** klicken. Der Button **Vorschau** zeigt den Beitrag,
+bevor ihn jemand sieht.
 
+Ihr könnt einen Beitrag vorbereiten und erst später veröffentlichen: unter **Status und
+Sichtbarkeit** neben „Veröffentlichen“ auf das Datum klicken und Datum plus Uhrzeit
+setzen. Der Beitrag erscheint dann automatisch zu diesem Zeitpunkt.
 
+:::caution Wichtig
+Prüft vor dem Veröffentlichen die Vorschau. Sobald der Beitrag veröffentlicht ist, sieht
+ihn jede und jeder Besuchende der Website.
+:::
+
+## Zwei Regeln, die oft vergessen werden
+
+- **Kein „Text steht aus“ veröffentlichen.** Fehlt ein Absatz, lasst ihn weg oder
+  speichert als Entwurf. Platzhalter werden von der Redaktion entfernt.
+- **Verlinken statt wiederholen.** Wenn eine Information schon auf einer Service-Seite
+  steht, verlinkt sie, statt sie zu kopieren. Sonst gibt es zwei Wahrheiten, die
+  auseinanderlaufen.
+
+![Drei Beitragskacheln mit Bild, Titel und Textauszug](/img/guide-gwyneth/news-kacheln.png)
+
+*So landet der Beitrag in der Übersicht: Bild, Titel, Textauszug.*

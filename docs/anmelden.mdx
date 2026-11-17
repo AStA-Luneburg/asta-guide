@@ -2,51 +2,65 @@
 sidebar_position: 2
 ---
 
-import ImageAside from '@site/src/components/ImageAside';
-
-
 # Accounts & Passwörter
 
 ## Auf der Website anmelden
 
-Die AStA-Website findet ihr unter der Domain [https://www.asta-lueneburg.de](https://www.asta-lueneburg.de).
+Die AStA-Website findet ihr unter [https://asta-lueneburg.de](https://asta-lueneburg.de).
 
-![](/img/guide-pics/image3_new.png)
-
-
-Möchtet ihr Änderungen an den Seiten vornehmen, Termine in den Kalender eintragen oder ähnliches machen, müsst ihr euch zuerst einloggen. Geht hierfür auf [https://www.asta-lueneburg.de/login](https://www.asta-lueneburg.de/login) (oder klickt den Button unten). Die Anmeldemaske erscheint. Hier tragt ihr eure Account- Informationen ein und klickt auf „Anmelden“. Nach der Anmeldung landet ihr auf der Administrations-Oberfläche (zu sehen im Bild unten), die euch Bearbeitungs- und Verwaltungsmöglichkeiten bietet.
-
-:::info
-Solltet ihr (noch) keine Passwörter/Zugangsdaten für die Website haben oder diese vergessen haben, kontaktiert den/die AStA-Webmaster*in unter webmaster@asta-lueneburg.de.
-:::
+Geht für die Anmeldung auf [https://asta-lueneburg.de/login](https://asta-lueneburg.de/login).
+Die Adresse führt zur Anmeldemaske von WordPress; `asta-lueneburg.de/wp-login.php` ist
+dieselbe Seite. Tragt eure Zugangsdaten ein und klickt auf „Anmelden“.
 
 <center>
-    <a class="button button--primary button--lg" href="https://www.asta-lueneburg.de/login">Zum Homepage Login</a>
+    <a class="button button--primary button--lg" href="https://asta-lueneburg.de/login">Zum Homepage Login</a>
 </center>
 
+![Anmeldeformular mit Feldern für Benutzername und Passwort](/img/guide-gwyneth/anmelden.png)
 
+*Die Anmeldemaske unter `/login`.*
+
+Nach der Anmeldung landet ihr im **Dashboard**. Von dort führen euch zwei Wege weiter:
+
+| Bereich | Wofür | Erscheint |
+|---|---|---|
+| **Beiträge** | Neuigkeiten, Berichte, Stellenanzeigen, Veranstaltungen | In den Listen und auf der Startseite |
+| **Seiten** | Feste Inhalte wie Service, Referate, StuPa | Im Menü |
+
+![Dashboard im Adminbereich mit den Bereichen Beiträge und Seiten](/img/guide-gwyneth/dashboard.png)
+
+*Das Dashboard nach der Anmeldung: links die Bereiche, oben die Admin-Leiste.*
+
+Oben auf der Seite erscheint zusätzlich die **Admin-Leiste**. Über sie kommt ihr aus
+jeder öffentlichen Seite heraus direkt in den Editor des Inhalts, den ihr gerade seht.
+
+:::info
+Solltet ihr (noch) keine Zugangsdaten haben oder diese vergessen haben, kontaktiert die
+Webmaster-Stelle unter webmaster@asta-lueneburg.de. Legt kein zweites Konto an — Rechte
+hängen am Account.
+:::
 
 ## Passwort ändern
- Allen wird empfohlen, nach dem erstmaligen Anmelden sowie in regelmäßigen Abständen das Passwort zu ändern und dieses streng vertraulich zu behandeln, d.h. wirklich nur an die Menschen weiter zu geben, die innerhalb eurer Organisation für die Verwaltung der Inhalte auf der Website zuständig sind.
- 
- Bitte sendet das Passwort wenn möglich nicht in Whatsapp/Telegram Gruppen oder speichert es in einer Google/Notion Cloud. Eine gute Möglichkeit ist das Speichern in einem Passwortverwaltungsprogramm, wie Keepass, oder das Versenden über ein verschlüsseltes (also passwortgesichertes) Dokument.
- 
-Um das Passwort zu ändern, klickt in der linken Seitenleiste der Administrationsoberfläche auf „Profil“.
 
-![](/img/guide-pics/image6.jpeg)
+Allen wird empfohlen, das Passwort nach der ersten Anmeldung und danach in regelmäßigen
+Abständen zu ändern.
 
-Die meisten Informationen auf dieser Seite sind für die AStA-Website irrelevant. Scrollt ganz nach unten und klickt unter „Benutzerkonten-Verwaltung“ auf „Passwort generieren“. 
+1. Oben rechts auf den eigenen Namen klicken → **Profil bearbeiten**
+   (alternativ im Admin-Bereich: **Benutzer → Profil**).
+2. Ganz unten im Abschnitt **Benutzerkonten-Verwaltung** auf **Passwort generieren**
+   klicken. WordPress schlägt ein sicheres Passwort vor; ihr könnt das Feld
+   überschreiben.
+3. **Profil aktualisieren** klicken. Das alte Passwort verliert damit seine Gültigkeit.
 
-<ImageAside src="/img/guide-pics/image7.jpeg">
-    Es wird euch automatisch ein neues, sicheres Passwort generiert. Allerdings könnt ihr das in dem erscheinenden Textfeld auch selbst noch anpassen. Habt ihr euch für ein Passwort entschieden, klickt auf „Profil aktualisieren“. Damit ist das neue Passwort gespeichert und das alte verliert seine Gültigkeit.  
-</ImageAside>
+![Profilseite mit dem Abschnitt Benutzerkonten-Verwaltung und dem Button Passwort generieren](/img/guide-gwyneth/profil-passwort.png)
 
-<!-- <div style={{ display: 'flex', alignItems: 'start', gap: '2rem' }}>
-    <img src="/img/guide-pics/image7.jpeg" style={{ width: '100%', flex: '0 0 50%', display: 'block' }}/>
-    <p style={{flex: 1}}>
-        Es wird euch automatisch ein neues, sicheres Passwort generiert. Allerdings könnt ihr das in dem erscheinenden Textfeld auch selbst noch anpassen. Habt ihr euch für ein Passwort entschieden, klickt auf „Profil aktualisieren“. Damit ist das neue Passwort gespeichert und das alte verliert seine Gültigkeit.  
-    </p>
-</div> -->
+*Der Passwort-Bereich ganz unten im Profil.*
 
+Das Passwort wird nicht per E-Mail versendet. Notiert es euch direkt.
 
+### Passwörter weitergeben
 
+Gebt Zugangsdaten nur an die Menschen weiter, die innerhalb eurer Organisation für die
+Website zuständig sind. Bitte nicht in WhatsApp- oder Telegram-Gruppen und nicht in
+Notion- oder Google-Dokumenten. Ein Passwortverwaltungsprogramm (z. B. KeePass) ist der
+richtige Ort.
