@@ -39,6 +39,7 @@ Datei, ändert den Text und committet — kein CMS dazwischen.
 | Startseite mit „Letztes Update“ und Änderungstabelle | `docs/home.mdx` |
 | Dev-Log-Einträge | `blog/JJJJ-MM-TT-titel.mdx`, Autor*innen in `blog/authors.yml` |
 | Screenshots | `static/img/guide-gwyneth/` |
+| Archiv: Kapitel, die es nicht mehr gibt | `docs/ticket-refund/`, `docs/bettenboerse/einrichtung.mdx`, `docs/bettenboerse/entwickler.mdx`, `docs/Seiten bearbeiten/seitenleisten-bearbeiten.mdx` |
 | Farben, Schrift, Abstände | `src/css/custom.css` |
 | Seitentitel, Navigation, Footer, Adresse | `docusaurus.config.js` |
 

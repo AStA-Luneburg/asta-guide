@@ -115,6 +115,20 @@ const sidebars = {
       id: 'hintergrund',
       label: 'Was die Redaktion nicht sieht',
     },
+    {
+      type: 'category',
+      label: 'Archiv (vor dem Relaunch)',
+      collapsed: true,
+      items: [
+        'Seiten bearbeiten/seitenleisten-bearbeiten',
+        'bettenboerse/einrichtung',
+        'bettenboerse/entwickler',
+        'ticket-refund/admin-dashboard',
+        'ticket-refund/berechtigte-studierende',
+        'ticket-refund/rueckerstattungen',
+        'ticket-refund/rueckerstattungen-exportieren',
+      ],
+    },
   ],
 };
 
