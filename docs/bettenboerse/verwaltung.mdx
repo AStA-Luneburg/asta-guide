@@ -1,14 +1,61 @@
-import ImageAside from '@site/src/components/ImageAside';
+# Bettenbörse
 
+Die Bettenbörse vermittelt übergangsweise Schlafplätze: Studierende mit freiem Sofa oder
+Bett und Erstsemester, die für die ersten Wochen einen Platz suchen.
 
-# Verwaltung der Bettenbörse
+Öffentlich steht sie auf der Seite
+[Bettenbörse](https://asta-lueneburg.de/service/bettenboerse/)
+(englisch: [Bed exchange](https://asta-lueneburg.de/en/service/bed-exchange/)).
 
-Wie in vielen anderen deutschen Universitätsstädten ist auch hier in Lüneburg die Wohnsituation schwierig, sodass viele neue Erstis zu Beginn des Studiums auf das Pendeln angewiesen sind. Der AStA bietet jedes Jahr zu Beginn des Wintersemesters eine Bettenbörse an, dadurch können freie Betten und Sofas für kurze Zeit an Erstis vergeben werden, um den Start in das Studium zu erleichtern.
+> **Geändert mit dem Relaunch:** Es gibt kein eigenes „Bettenbörse“-Plugin mehr. Die Seite
+> ist eine normale Seite mit einem **Fluent-Forms-Formular**; die Anleitung zur
+> Plugin-Einrichtung und zu `ASTA_ENV` ist damit entfallen.
 
-*Das Bettenbörse-Tool hilft bei der Verwaltung und Zuweisung der Schlafplätze und nimmt manuelle Arbeit ab.*
+## Wie Einträge ankommen
 
-![](/img/bettenboerse/verwaltung.png)
+Das Formular auf der Seite ist das Fluent-Forms-Formular **Bettenboerse (ID 1)**. Jede
+Absendung erscheint als Eintrag im Backend:
 
-## Eintrag hinzufügen
+1. **Fluent Forms → Einträge** öffnen.
+2. Das Formular auswählen.
+3. Die Einträge ansehen, filtern und einzeln öffnen.
 
-Auf der AStA-Website gibt es ein Formular, mit dem sich sowohl Bett-suchende und Bett-habende beim AStA melden können. Hier werden Kontaktinformationen und andere wichtige Daten gesammelt und im System gespeichert.
+![Einträge des Bettenbörse-Formulars in Fluent Forms mit den abgesendeten Daten](/img/guide-gwyneth/fluent-eintraege.png)
+
+*Die Einträge des Formulars in Fluent Forms.*
+
+Die Einträge enthalten Kontaktdaten. Wer sie bearbeitet, sollte das nur am dafür
+vorgesehenen Platz tun — nicht per Export in Chats oder private Tabellen.
+
+## Vermittlung
+
+Die Bettenbörse stellt den Kontakt her, sie vermittelt nicht automatisch:
+
+1. Passende Einträge einander zuordnen (Ort, Zeitraum, Zahl der Plätze).
+2. Beide Seiten per E-Mail aneinander verweisen.
+3. Nach der Vermittlung den Stand im Eintrag notieren.
+
+## Öffnen und Schließen
+
+Die Aktion läuft zu Beginn des Wintersemesters. Auf der Seite steht dafür ein eigener
+Absatz, der den aktuellen Stand nennt — zum Beispiel:
+
+> **Die Bettenbörse ist für das Wintersemester 25/26 geschlossen.**
+
+Zum Öffnen wird dieser Absatz ersetzt bzw. entfernt, zum Schließen wieder eingesetzt. Die
+Änderung macht die Webmaster-Stelle auf Zuruf des zuständigen Referats.
+
+## Was nicht auf die Seite gehört
+
+- **Dauerhafte Mietangebote.** Dafür ist das
+  [Schwarze Brett](https://asta-lueneburg.de/service/beitrag-einreichen/) da.
+- **Kontaktdaten in Textform.** Sie gehören in das Formular, nicht in den Seitentext.
+- **Zusagen über Schlafplätze.** Die Seite beschreibt das Angebot, sie verteilt keine
+  Plätze.
+
+:::caution Datenschutz
+Einträge enthalten Namen, E-Mail-Adressen und Angaben zum Wohnort. Sie dürfen nicht
+weitergegeben, nicht in Gruppen geteilt und nicht in Cloud-Tabellen exportiert werden.
+Nach Abschluss der Aktion werden die Einträge gelöscht; die Löschung erfolgt durch die
+Webmaster-Stelle.
+:::

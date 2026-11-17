@@ -1,67 +1,68 @@
+# Seiten erstellen
+
 import ImageAside from '@site/src/components/ImageAside';
 
-# Seiten erstellen
-Servicebetriebe und das StuPa haben die Möglichkeit, komplett neue Seiten hinzuzufügen. Klickt dafür in der Seitenleiste im Adminbereich auf „Erstellen“ unter „Seiten“. Es öffnet sich der Editor, den ihr auch  seht, wenn ihr eine bereits bestehende Seite bearbeitet.
+Referate, Servicebetriebe und das StuPa haben eigene Seiten auf der Website, die sie
+selbst verwalten. Wer eine **neue** Seite braucht, legt sie im Admin-Bereich an.
 
-:::caution Eine Bitte
-Wenn es darum geht neue Seiten zu erstellen, dann sprecht euer Vorhaben mit den Sprecher\*innen und/oder der/dem Webmaster\*in ab. Denn eine hohe Anzahl an Menüpunkten und Unterseiten macht die Website als Ganzes nicht gerade zugänglicher.
+:::caution Erst absprechen
+Jede neue Seite und jeder neue Menüpunkt macht die Website größer. Sprecht das Vorhaben
+deshalb vorher mit den Sprecher*innen und der Webmaster-Stelle ab. Meist lässt sich das
+Anliegen als Abschnitt einer bestehenden Seite lösen — und das ist fast immer die bessere
+Wahl.
 :::
 
-## How to
-import image19 from '@site/static/img/guide-pics/image19.png';
+## Seite anlegen
 
-<ImageAside src={image19}>
-    In eurem Dashboard könnt ihr über die Seitenleiste eine neue Seite erstellen.
-    <br/><br/>
-    Ihr nutzt den Editor wie beim Bearbeiten eines Beitrags/einer Seite. Füllt eure neue Seite mit Inhalt, indem ihr verschiedene Blöcke hinzufügt und die Seite so nach euren Wünschen gestaltet (mehr Infos dazu im Menüpunkt Seiten bearbeiten).
+1. **Seiten → Erstellen**.
+2. **Titel** eintragen. Er wird die H1 der Seite.
+3. In der rechten Seitenleiste unter **Seiten-Attribute** die **übergeordnete Seite**
+   wählen. Sie bestimmt den Pfad der URL: Eine Seite unter „EliStu“ erbt `…/elistu/`.
+4. Inhalt schreiben und gliedern — siehe [Seitenaufbau](./seiten-aufbau.mdx) und
+   [Bausteine](./bausteine.mdx).
+5. **Vorschau** prüfen, dann **Veröffentlichen**.
+
+<ImageAside src="/img/guide-gwyneth/seite-erstellen.png" third alt="Seiten-Attribute in der Seitenleiste mit der Auswahl der übergeordneten Seite">
+Die <strong>Seiten-Attribute</strong> bestimmen, wo die Seite hängt. Aus der übergeordneten Seite
+entsteht der Pfad der URL.
 </ImageAside>
 
-Auch hier gibt es noch ein paar Einstellungen, die getätigt werden müssen, bevor ihr die Seite veröffentlichen könnt. Diese könnt ihr in der Seitenleiste rechts vornehmen.
-
-
-
-## Auswählen der übergeordneten Seite
-
-import image20 from '@site/static/img/guide-pics/image20.png';
-
-<ImageAside src={image20} third={true}>
-    Dort befindet sich der Abschnitt „Seiten-Attribute“. Sollte dieser noch nicht ausgeklappt sein, könnt ihr dies tun, indem ihr auf den Titel klickt. Wählt nun unter „Übergeordnete Seite“ die Seite aus, der ihr die neue Seite unterordnen wollt. Für den Servicebetrieb EliStu wäre dies zum Beispiel die Seite „EliStu“ unter „Service“. Möchte das StuPa eine Unterseite zu den Hochschulwahlen hinzufügen, wählt es hier „Hochschulwahlen“ unter „StuPa“ aus. 
-</ImageAside>
-
-Aufgrund der großen Anzahl der Seiten kann es gerne mal ein wenig dauern, bis die gewünschte Seite gefunden wird, aber keine Sorge, sie ist da!
-
-Dass ihr eine übergeordnete Seite auswählen müsst, hat zwei Gründe: Erst einmal ist es so einfacher, die vielen Seiten auf unserer AStA-Website zu verwalten und die Übersicht zu behalten, außerdem bestimmt die übergeordnete Seite, welche URL (also das, was in der Adresszeile eures Browsers steht) die neue Seite haben wird, was zu einer besseren Sortierung in Suchmaschinen führt.
-
-## Anpassen der Seitenleiste
-
-import image21 from '@site/static/img/guide-pics/image21.png';
-
-<ImageAside src={image21}>
-    Habt ihr die übergeordnete Seite ausgewählt, müsst ihr noch eine Seitenleiste einstellen. Viele Entitäten in der Studierendenschaft haben eine eigene Seitenleiste, die auf ihren Seiten angezeigt wird und wichtige Informationen wie Ansprechpartner*innen und Kontaktdaten enthält. Wie ihr diese bearbeitet, wird später in diesem Guide noch erklärt.
-    <br/><br/>    
-    Damit diese Seitenleiste auch auf eurer neuen Seite angezeigt wird, öffnet den Reiter „Sidebars“ (der sich direkt unter „Seiten-Attribute“ befinden sollte). Hier habt ihr jetzt viele Optionen, die ihr aber alle ignorieren solltet, bis auf die Auswahlbox, die mit „Haupt“ beschriftet ist. In dieser wählt ihr den Namen eurer Organisation aus, falls vorhanden. Andernfalls wird automatisch die Seitenleiste mit den Informationen des AStA Büroteams angezeigt.
-</ImageAside>
-
-
-Habt ihr dies erledigt, ist eure Seite bereit zur Veröffentlichung. Dafür einfach oben rechts auf den großen, blauen Button „Veröffentlichen“ klicken. Bitte auch hier vorher unbedingt über die Vorschau-Funktion überprüfen, ob alles so aussieht, wie ihr es euch vorgestellt habt, und es keine Fehler auf der Seite gibt!
-
-
-## Seiten zum Menü hinzufügen
-
-Mit der Veröffentlichung eurer Seite ist diese zwar theoretisch öffentlich und für alle zugänglich, allerdings bis jetzt nur über die URL aufrufbar, bzw. wenn ihr sie auf einer anderen Seite verlinkt. Dies kann manchmal so gewünscht sein, in den meisten Fällen sollte wohl die neue Seite allerdings noch zum Hauptmenü hinzugefügt werden.
-
-Hierfür klickt ihr in der Seitenleiste des Adminbereiches auf „Menüs“ unter „Design“. Es sollte sich eine Seite mit der Menüstruktur des Hauptmenüs öffnen.
-
-![](/img/guide-pics/image22.png)
-
-:::info
-Manchmal kommt es vor, dass beim Aufruf der Seite nicht das Hauptmenü (Startseite, AStA, etc...) ausgewählt ist. Sollte dies der Fall sein, wählt oben in der Auswahlbox neben „Wähle ein Menü zum Bearbeiten“ das Menü „Hauptmenü (Top) (Topbar)“ aus und klickt auf „Auswählen“. Die Seite sollte sich nun mit dem richtigen Menü aktualisieren.
+:::info Keine Seitenleiste mehr
+Die frühere Auswahl einer Seitenleiste im Reiter „Sidebars“ gibt es nicht mehr. Jede
+Seite wird vollbreit dargestellt.
 :::
 
-![](/img/guide-pics/image23.png)
+## Sprache
 
-Um eure Seite nun zum Menü hinzuzufügen, schaut auf der linken Seite oben unter den Reiter „Seiten“. Eure neu erstellte Seite sollte dort unter „Zuletzt erstellt“ auftauchen. Falls nicht, klickt auf „Suchen“ und gebt den Titel eurer Seite ein. Habt ihr eure Seite gefunden, hakt sie an, in dem ihr auf die Box neben dem Seitentitel klickt und klickt danach auf „Zum Menü hinzufügen“. Eure Seite taucht anschließend im Bereich rechts („Menü-Struktur“) **ganz unten** auf. Zieht diese dann einfach mit eurer Maus unter den Menüpunkt, den ihr vorhin auch als „Übergeordnete Seite“ ausgewählt habt. Bestätigt eure Änderungen, indem ihr auf den blauen Button „Menü speichern“ klickt. Erst dann wird eure neue Seite für alle im Menü angezeigt.
+Seiten sind sprachgebunden. Ein deutscher Inhalt ist ein eigener Inhalt neben dem
+englischen, und beide werden über Polylang **verknüpft**. Ohne Verknüpfung erscheint der
+Sprachumschalter nicht auf der Seite.
+
+Wie ihr die englische Fassung anlegt, steht unter
+[Übersetzungen](../uebersetzungen-bearbeiten.mdx).
+
+## Seite ins Menü aufnehmen
+
+Eine veröffentlichte Seite ist über ihre URL erreichbar, aber noch nicht im Menü. Das
+ist manchmal gewollt; meistens nicht.
+
+1. **Design → Menüs**.
+2. Oben das Menü **Hauptmenü (Top)** wählen (bei Bedarf **Auswählen** klicken).
+3. Links unter **Seiten** die neue Seite anhaken und **Zum Menü hinzufügen** klicken.
+4. Den Eintrag in der Menü-Struktur an die richtige Stelle ziehen.
+5. **Menü speichern**.
+
+Danach dasselbe im Menü **Hauptmenü (Top) - Englisch**. Fehlt der Eintrag dort, fehlt die
+Seite auf der englischen Website.
 
 :::warning Achtung
-Bitte gebt bei der Veröffentlichung einer neuen Seite und beim Hinzufügen eines Menüpunktes dem/der Webmaster*in Bescheid und sprecht eure Ideen vor der Umsetzung ab.
+Wie ein Menüpunkt im Mega-Menü aussieht — Panel, Gruppe, Untertitel — entscheidet die
+Webmaster-Stelle über die Einstellungen von **Max Mega Menu**. Reicht euren Wunsch dort
+ein, statt am Menü zu experimentieren. Details im Kapitel
+[Menü und Mega-Menü](../menue-und-megamenue.mdx).
 :::
+
+## Wenn eine Seite nicht mehr gebraucht wird
+
+Nicht löschen, sondern die Webmaster-Stelle fragen. Gelöschte Seiten hinterlassen
+tote Links und Redirects; in der Regel wird stattdessen eine Weiterleitung eingerichtet.

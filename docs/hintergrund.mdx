@@ -1,0 +1,45 @@
+# Was die Redaktion nicht sieht, aber wissen sollte
+
+Manches am Verhalten der Website ist im Editor nicht sichtbar, entscheidet aber darüber,
+ob Inhalte gefunden und gelesen werden.
+
+| Thema | Kurzfassung |
+|---|---|
+| **Suchmaschinen** | Der **Textauszug** ist die Beschreibung im Suchergebnis. Fehlt er, nimmt das Theme den ersten Absatz; fehlt auch der, steht dort ein allgemeiner Satz mit dem Titel |
+| **Social Media** | Beim Teilen erscheint das **Beitragsbild** als Vorschau. Ohne Beitragsbild greift das Standard-Vorschaubild der Website |
+| **Dunkelmodus** | Die Website folgt der Systemeinstellung; der Schalter im Kopfbereich setzt sie manuell. Eigene Farben können im Dunkelmodus unlesbar werden |
+| **Zwischenablage** | Beim Kopieren aus Word kommen unsichtbare Formatierungen mit. Nutzt „Als Text einfügen“ (`Cmd/Ctrl + Shift + V`) |
+| **Barrierefreiheit** | Wird geprüft, nicht nur empfohlen: Der Editor **markiert** fehlende Alternativtexte beim Bearbeiten. Das ist kein Geschmacksurteil |
+| **Suche** | Die Suche im Kopfbereich durchsucht Seiten und Beiträge. Ein aussagekräftiger Titel ist deshalb auch ein Suchfaktor |
+| **Englische Fassung** | Fehlt eine Übersetzung, bleibt an dieser Stelle der deutsche Inhalt stehen. Inhalte ohne Übersetzung erscheinen nicht im englischen Menü |
+| **URLs** | Die URL entsteht beim Anlegen aus dem Titel und bleibt danach stehen. Ein späterer Titelwechsel ändert sie nicht |
+
+![Suchergebnisseite mit Trefferliste und Trefferzahl](/img/guide-gwyneth/suchergebnis.png)
+
+*Die Suche im Kopfbereich: Sie durchsucht Seiten und Beiträge, nicht die Mediathek.*
+
+## Was das für die Praxis heißt
+
+1. **Der Textauszug ist Teil der Veröffentlichung**, nicht ein optionales Feld. Zwei Sätze
+   reichen.
+2. **Das Beitragsbild wird gesehen**, bevor der Beitrag gelesen wird — in der Liste, in
+   der Vorschau beim Teilen.
+3. **Formatierung aus anderen Programmen** ist der häufigste Grund für kaputt aussehende
+   Absätze. „Als Text einfügen“ verhindert das.
+4. **Der Dunkelmodus ist kein Sonderfall.** Wer Farben von Hand setzt, muss beide Modi
+   prüfen — deshalb besser bei der Palette bleiben.
+
+![Startseite im Dunkelmodus mit dunklem Hintergrund und heller Schrift](/img/guide-gwyneth/startseite-dunkel.png)
+
+*Dieselbe Startseite im Dunkelmodus. Eigene Farben sehen hier oft anders aus als geplant.*
+
+## Und was die Website automatisch macht
+
+- Sie baut Kopfbereich, Footer, Menü und Sprachumschalter aus den Design-Tokens.
+- Sie skaliert Bilder und liefert sie in passenden Größen aus.
+- Sie setzt Seiten- und Beitragstitel als H1 und sorgt für die Grundstruktur der
+  Überschriften.
+- Sie verlinkt Kategorien, Archive und die Suche.
+
+Was sie **nicht** kann: fehlende Auszüge erfinden, fehlende Alternativtexte ergänzen und
+wissen, dass zwei Seiten dasselbe sagen. Das bleibt redaktionelle Arbeit.

@@ -27,6 +27,39 @@ $ npm start
 
 Nun kannst du Änderungen vornehmen, die automatisch in der Vorschau aktualisiert werden.
 
+## Wo die Texte stehen
+
+Jede Seite der Anleitung ist **eine** Datei. Wer einen Absatz ändern will, öffnet die
+Datei, ändert den Text und committet — kein CMS dazwischen.
+
+| Was | Datei |
+|---|---|
+| Kapitel — eine Datei pro Seite | `docs/<kapitel>.mdx` (z. B. `docs/beitraege-erstellen.mdx`) |
+| Reihenfolge, Gruppen und Namen in der Seitenleiste | `sidebars.js` |
+| Startseite mit „Letztes Update“ und Änderungstabelle | `docs/home.mdx` |
+| Dev-Log-Einträge | `blog/JJJJ-MM-TT-titel.mdx`, Autor*innen in `blog/authors.yml` |
+| Screenshots | `static/img/guide-gwyneth/` |
+| Archiv: Kapitel, die es nicht mehr gibt | `docs/ticket-refund/`, `docs/bettenboerse/einrichtung.mdx`, `docs/bettenboerse/entwickler.mdx`, `docs/Seiten bearbeiten/seitenleisten-bearbeiten.mdx` |
+| Farben, Schrift, Abstände | `src/css/custom.css` |
+| Seitentitel, Navigation, Footer, Adresse | `docusaurus.config.js` |
+
+Direkt im Browser geht das auch: Datei auf GitHub öffnen → Stift-Symbol → Änderung
+beschreiben → „Create a new branch and start a pull request“. Nach dem Merge auf `main`
+baut die Action die Seite neu und lädt sie per FTP hoch.
+
+## Screenshots
+
+Die Bilder der Anleitung liegen in `static/img/guide-gwyneth/`. Sie zeigen die echte
+Website (`asta-lueneburg.de`) bzw. deren lokalen Zwilling `dev-asta-gwyneth.local` —
+keine Mockups. Beim Erneuern gilt:
+
+- auf einer Gwyneth-Installation aufnehmen, nicht auf der Vorgänger-Website;
+- deutsche Oberfläche (Admin-Sprache `de_DE`), damit die Bezeichnungen zu den Texten passen
+  — das Excerpt-Feld heißt dort **Textauszug**, der Muster-Reiter **Vorlagen**;
+- für Screenshots im Adminbereich ein temporäres Konto mit Administrator-Rechten anlegen
+  und es nach dem Shooting wieder löschen;
+- jedes Bild braucht einen Alternativtext; die Anleitung erklärt selbst, warum.
+
 ## Änderungen veröffentlichen
 
 Um deine Änderungen zu veröffentlichen, musst du sie nur per Git in diese Repository pushen.

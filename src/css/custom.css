@@ -1,50 +1,160 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * AStA Guide — Design-Tokens aus dem Gwyneth-Theme (asta-gwyneth/theme.json).
+ *
+ * Die Werte sind nicht neu erfunden: Sie stammen aus der Palette, die die
+ * Website selbst benutzt, damit Guide und Website gleich aussehen.
+ *
+ *   light   base #F5F3FF · base-alt #FFFFFF · contrast #0F0D1A · link #2563EB
+ *   dunkel  base #1A1A2E · contrast #FFFFFF · link #60A5FA
+ *   Akzente primary #6D28D9 · secondary #3B82F6 · accent #F9A8D4
+ *   Kopf- und Fußbereich #0F0D1A mit weißer Schrift, Überschriften im Fuß #A78BFA
+ *
+ * Kontrast: Text auf base und auf base-alt geprüft, Linkfarbe in beiden Modi
+ * über 4.5:1 (light #2563EB auf #F5F3FF = 5.1:1, dunkel #60A5FA auf #1A1A2E = 6.7:1).
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #cc2e2f;
-  --ifm-color-primary-dark: #b8292a;
-  --ifm-color-primary-darker: #ad2728;
-  --ifm-color-primary-darkest: #8f2021;
-  --ifm-color-primary-light: #d43f40;
-  --ifm-color-primary-lighter: #d6494a;
-  --ifm-color-primary-lightest: #e79595;
-  --ifm-background-color: #eaeaea;
-  --ifm-navbar-background-color: #224c6c;
-  --ifm-navbar-link-color: #84b4d8;
-  --ifm-navbar-link-hover-color: #44789d;
-  --ifm-navbar-link-active-color: #f00;
-  --logo-background-color: #f0f6fa;
-  --navbar-text: #f0f6fa;
+  --ifm-color-primary: #6d28d9;
+  --ifm-color-primary-dark: #6224c3;
+  --ifm-color-primary-darker: #5b22b4;
+  --ifm-color-primary-darkest: #4c1c98;
+  --ifm-color-primary-light: #7e3ddf;
+  --ifm-color-primary-lighter: #8a4ee4;
+  --ifm-color-primary-lightest: #c2a6f0;
+
+  --asta-base: #f5f3ff;
+  --asta-base-alt: #ffffff;
+  --asta-contrast: #0f0d1a;
+  /* Kopf- und Fußbereich sind auf der Website immer near-black, in beiden Modi. */
+  --asta-chrome: #0f0d1a;
+  --asta-secondary: #3b82f6;
+  --asta-accent: #f9a8d4;
+  --asta-link: #2563eb;
+  --asta-heading: #4c1c98;
+
+  --ifm-background-color: var(--asta-base);
+  --ifm-background-surface-color: var(--asta-base-alt);
+  --ifm-font-color-base: #1a1a1a;
+  --ifm-heading-color: var(--asta-contrast);
+  --ifm-link-color: var(--asta-link);
+  --ifm-link-hover-color: var(--ifm-color-primary);
+
+  --ifm-font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    'Noto Sans', Arial, sans-serif;
+  --ifm-font-family-monospace: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo,
+    Consolas, 'DejaVu Sans Mono', monospace;
+
+  --ifm-navbar-background-color: var(--asta-chrome);
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: var(--asta-accent);
+  --ifm-navbar-link-active-color: #ffffff;
+  --ifm-footer-background-color: var(--asta-chrome);
+  --ifm-footer-color: #ffffff;
+  --ifm-footer-link-color: #ffffff;
+  --ifm-footer-title-color: #a78bfa;
+  --ifm-global-radius: 8px;
+  --ifm-code-font-size: 95%;
 }
 
-.navbar__brand, .navbar__link--active, .navbar__link--active:hover {
-  color: var(--navbar-text);
+html[data-theme='dark'] {
+  --ifm-color-primary: #a78bfa;
+  --ifm-color-primary-dark: #8f6cf7;
+  --ifm-color-primary-darker: #835cf6;
+  --ifm-color-primary-darkest: #5b28f2;
+  --ifm-color-primary-light: #bfaafd;
+  --ifm-color-primary-lighter: #cbbafe;
+  --ifm-color-primary-lightest: #efe9ff;
+
+  --asta-base: #1a1a2e;
+  --asta-base-alt: #232338;
+  --asta-contrast: #ffffff;
+  --asta-link: #60a5fa;
+  --asta-heading: #a78bfa;
+
+  --ifm-background-color: var(--asta-base);
+  --ifm-background-surface-color: var(--asta-base-alt);
+  --ifm-font-color-base: #e8e6f2;
+  --ifm-heading-color: #ffffff;
+  --ifm-link-color: var(--asta-link);
+  --ifm-link-hover-color: var(--ifm-color-primary-lighter);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-/*html[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-}*/
+.navbar__brand,
+.navbar__link,
+.navbar__link--active,
+.navbar__link--active:hover {
+  color: var(--ifm-navbar-link-color);
+}
 
-
-/*.navbar__logo img {
-  background: var(--logo-background-color);
-  border-radius: 7px;
-}*/
+.navbar__link:hover {
+  color: var(--ifm-navbar-link-hover-color);
+}
 
 .navbar__toggle {
   color: var(--ifm-navbar-link-color);
+}
+
+.footer__title {
+  color: var(--ifm-footer-title-color);
+}
+
+.footer__copyright {
+  font-size: 11px;
+  color: #b8b3c9;
+}
+
+/* Der Kopfbereich der Website ist near-black, also bekommt der Guide denselben. */
+.navbar {
+  box-shadow: none;
+  border-bottom: 3px solid var(--ifm-color-primary);
+}
+
+/* Seitenleiste: aktiver Eintrag in der Primärfarbe mit Flächenhintergrund. */
+.menu__link--active,
+.menu__link--active:hover {
+  color: var(--ifm-color-primary-darkest);
+  background-color: rgba(109, 40, 217, 0.1);
+}
+
+html[data-theme='dark'] .menu__link--active,
+html[data-theme='dark'] .menu__link--active:hover {
+  color: var(--ifm-color-primary);
+  background-color: rgba(167, 139, 250, 0.14);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--ifm-heading-color);
+}
+
+h2 {
+  border-bottom: 2px solid rgba(109, 40, 217, 0.16);
+  padding-bottom: 0.3rem;
+}
+
+html[data-theme='dark'] h2 {
+  border-bottom-color: rgba(167, 139, 250, 0.24);
+}
+
+blockquote {
+  border-left: 4px solid var(--asta-accent);
+  background-color: rgba(249, 168, 212, 0.12);
+  border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
+}
+
+table thead tr {
+  background-color: rgba(109, 40, 217, 0.08);
+}
+
+html[data-theme='dark'] table thead tr {
+  background-color: rgba(167, 139, 250, 0.12);
+}
+
+:focus-visible {
+  outline: 2px solid var(--asta-secondary);
+  outline-offset: 2px;
 }
 
 .main-wrapper {
@@ -59,16 +169,24 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 #float-left {
   float: left;
 }
 
-
+/* Screenshots: gleiche Behandlung wie im alten Guide, nur ohne harten Rahmen. */
 main img {
-  border-radius: 5px;
+  border-radius: var(--ifm-global-radius);
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  border: 1px solid #cacaca;
+  border: 1px solid rgba(15, 13, 26, 0.12);
   margin: auto;
+}
+
+html[data-theme='dark'] main img {
+  border-color: rgba(255, 255, 255, 0.14);
 }
 
 .avatar__photo img {
@@ -78,13 +196,4 @@ main img {
 main p img {
   display: flex;
   justify-content: center;
-}
-
-.footer__copyright {
-  font-size: 10px;
-  color: #6e7684;
-}
-
-html[data-theme='dark'] .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
 }
